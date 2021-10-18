@@ -1,0 +1,43 @@
+cd /mnt/c/Users/cherw/OneDrive/"Plant FYP"/"PIN project"/Sequence/"Hmmer search"
+
+#build hmmer
+hmmbuild PIN3_intron_homologs.hmm PIN3_homologs_from_BLAST.fas
+
+#run hmmer on TAIR10
+hmmsearch PIN3_intron_homologs.hmm TAIR10_chr_all.fasta > PIN3_intron.out
+
+nhmmer PIN3_intron_homologs.hmm TAIR10_chr_all.fasta > PIN3_intron_nhmmer.out
+nhmmer PIN3_intron_homologs.hmm test.fasta > test.out
+
+#run hmmer on Brassica genomes
+cat *.fna > GCA_000309985.3_field_mustard_Cultivar_Chiifu-401-42.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_000309985.3_field_mustard_Cultivar_Chiifu-401-42.fasta > nhmmer_GCA_000309985.3_field_mustard_Cultivar_Chiifu-401-42.out
+
+cat *.fna > GCA_000686985.2_rape_Cultivar_ZS11.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_000686985.2_rape_Cultivar_ZS11.fasta > nhmmer_GCA_000686985.2_rape_Cultivar_ZS11.out
+
+cat *.fna > GCA_001682895.1_black_mustard_Cultivar_inbred_line_YZ12151.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_001682895.1_black_mustard_Cultivar_inbred_line_YZ12151.fasta > nhmmer_GCA_001682895.1_black_mustard_Cultivar_inbred_line_YZ12151.out
+
+cat *.fna > GCA_003434825.1_Brassica_rapa_FPsc_v1.3.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_003434825.1_Brassica_rapa_FPsc_v1.3.fasta > nhmmer_GCA_003434825.1_Brassica_rapa_FPsc_v1.3.out
+
+cat *.fna > GCA_008629595.1_Chinese_cabbage_Cultivar_CT001.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_008629595.1_Chinese_cabbage_Cultivar_CT001.fasta > nhmmer_GCA_008629595.1_Chinese_cabbage_Cultivar_CT001.out
+
+cat *.fna > GCA_900412535.2_Brassica_rapa_Z1.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_900412535.2_Brassica_rapa_Z1.fasta > nhmmer_GCA_900412535.2_Brassica_rapa_Z1.out
+
+cat *.fna > GCA_900416815.2_Brassica_oleracea_HDEM.fasta
+nhmmer PIN3_intron_homologs.hmm GCA_900416815.2_Brassica_oleracea_HDEM.fasta > nhmmer_GCA_900416815.2_Brassica_oleracea_HDEM.out
+
+cat *.fna > GCF_000309985.2_Cultivar_Chiifu-401-42.fasta
+nhmmer PIN3_intron_homologs.hmm GCF_000309985.2_Cultivar_Chiifu-401-42.fasta> nhmmer_GCF_000309985.2_Cultivar_Chiifu-401-42.out
+
+nhmmer PIN3_intron_homologs.hmm GCA_000751015.1_rape.fasta > nhmmer_GCA_000751015.1_rape.out
+nhmmer PIN3_intron_homologs.hmm GCA_003260635.2_B_cretica_B_v2_genomic.fasta > nhmmer_GCA_003260635.2_B_cretica_B_v2_genomic.out
+nhmmer PIN3_intron_homologs.hmm GCA_003260655.2_B_cretica_A_v2_genomic.fasta > nhmmer_GCA_003260655.2_B_cretica_A_v2_genomic.out
+nhmmer PIN3_intron_homologs.hmm GCA_003260675.2_B_cretica_D_v2_genomic.fasta > nhmmer_GCA_003260675.2_B_cretica_D_v2_genomic.out
+nhmmer PIN3_intron_homologs.hmm GCA_003260695.2_B_cretica_D_v2_genomic.fasta > nhmmer_GCA_003260695.2_B_cretica_D_v2_genomic.out
+
+#all done

@@ -1,0 +1,36 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_003260695.2_B_cretica_D_v2_genomic.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start      end  Description
+    ------- ------ -----  --------          -----    -----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Annotation for each hit  (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       2337  (405097114 residues searched)
+Residues passing SSV filter:       258333251  (0.638); expected (0.02)
+Residues passing bias filter:      143310278  (0.354); expected (0.02)
+Residues passing Vit filter:        27163562  (0.0671); expected (0.003)
+Residues passing Fwd filter:         3763737  (0.00929); expected (3e-05)
+Total number of hits:                      0  (0)
+# CPU time: 494.67u 1.24s 00:08:15.91 Elapsed: 00:04:09.24
+# Mc/sec: 671.26
+//
+[ok]

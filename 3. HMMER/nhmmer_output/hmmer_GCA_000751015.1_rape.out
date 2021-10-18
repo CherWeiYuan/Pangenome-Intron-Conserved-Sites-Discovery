@@ -1,0 +1,501 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_000751015.1_rape.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence     start     end  Description
+    ------- ------ -----  --------     -----   -----  -----------
+    5.7e-93  319.7  46.0  LK031894.1  126085  126480 Brassica napus genomic scaffold, scaffold_108, whole genome shot
+    2.7e-90  310.9  40.2  LK037066.1    3323    3713 Brassica napus genomic scaffold, scaffold_5280, whole genome sho
+    4.4e-87  300.3  52.3  LK031787.1 5042050 5041602 Brassica napus genomic scaffold, scaffold_1, whole genome shotgu
+    8.5e-80  276.3  27.9  LK031996.1  701289  701813 Brassica napus genomic scaffold, scaffold_210, whole genome shot
+    6.6e-72  250.3  36.3  LK032144.1   12852   12507 Brassica napus genomic scaffold, scaffold_358, whole genome shot
+    8.6e-28  104.9  46.4  LK031787.1 5041603 5041966 Brassica napus genomic scaffold, scaffold_1, whole genome shotgu
+    1.5e-16   67.9  25.4  LK032144.1   12502   12768 Brassica napus genomic scaffold, scaffold_358, whole genome shot
+    1.8e-09   44.6   9.6  LK032180.1  198870  198710 Brassica napus genomic scaffold, scaffold_394, whole genome shot
+      9e-09   42.3   8.2  LK032023.1  312215  312374 Brassica napus genomic scaffold, scaffold_237, whole genome shot
+    7.4e-07   35.9  28.7  LK031996.1  701623  701358 Brassica napus genomic scaffold, scaffold_210, whole genome shot
+      2e-05   31.2  20.6  LK032144.1   11382   11311 Brassica napus genomic scaffold, scaffold_358, whole genome shot
+    8.7e-05   29.1  16.7  LK031996.1  701961  702066 Brassica napus genomic scaffold, scaffold_210, whole genome shot
+    0.00014   28.5  21.0  LK031894.1  126402  126135 Brassica napus genomic scaffold, scaffold_108, whole genome shot
+    0.00028   27.5  20.8  LK037066.1    3636    3369 Brassica napus genomic scaffold, scaffold_5280, whole genome sho
+  ------ inclusion threshold ------
+        0.1   19.0  21.4  LK032144.1   11311   11396 Brassica napus genomic scaffold, scaffold_358, whole genome shot
+        6.1   13.1  19.3  LK032127.1  382751  382541 Brassica napus genomic scaffold, scaffold_341, whole genome shot
+
+
+Annotation for each hit  (and alignments):
+>> LK031894.1  Brassica napus genomic scaffold, scaffold_108, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  319.7  46.0   5.7e-93         1       413 []    126085    126480 ..    126085    126480 ..   1340449    0.97
+
+  Alignment:
+  score: 319.7 bits
+  PIN3_homologs_from_BLAST      1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaattttgcat 79    
+                                  cttc+tactctgttttattcctt a aaa             aA   a  taaaagg t+aaattccttaattttgcat
+                LK031894.1 126085 CTTCCTACTCTGTTTTATTCCTTAAAAAAA------------AAA-AAACTAAAAGGTTGAAATTCCTTAATTTTGCAT 126150
+                                  799******************999988873............332.3445999************************** PP
+
+  PIN3_homologs_from_BLAST     80 attttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tatgatgtttt 157   
+                                  attttcgttgacatAtt AcccgtttacA+gatAaaagaAttaAattatgttagt++AtaAAAtttA tatgatgtttt
+                LK031894.1 126151 ATTTTCGTTGACATATTTACCCGTTTACACGATAAAAGAATTAAATTATGTTAGTCCATAAAATTTAtTATGATGTTTT 126229
+                                  ******************************************************************************* PP
+
+  PIN3_homologs_from_BLAST    158 gtcat.ttg...............tggaaattaAaattcagAtaaaaaaatt.ggggAtggAccAtccgacAtgtgggg 219   
+                                  gtcat ttg               tggaaattaAaa+t a Ataaaaa+ tt ggggAtggAccAtcc acAtgtgggg
+                LK031894.1 126230 GTCATtTTGaagaaatattaaaagTGGAAATTAAAACTAAAATAAAAAGTTTgGGGGATGGACCATCCAACATGTGGGG 126308
+                                  *****9999*****************************99999999999888899************************ PP
+
+  PIN3_homologs_from_BLAST    220 caAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtcgtcAtggtccc 298   
+                                  caAtgg gtgag+gtcttAttA  tAaat gtaatggtggAcgAcAtggtctcgtgt+gtt atagtcgtcAtggtccc
+                LK031894.1 126309 CAATGGAGTGAGCGTCTTATTA--TAAATTGTAATGGTGGACGACATGGTCTCGTGTCGTTAATAGTCGTCATGGTCCC 126385
+                                  *********************9..9****************************************************** PP
+
+  PIN3_homologs_from_BLAST    299 catttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttatttatttatctactaAttgt 377   
+                                  catttt atgggagtt+ attggattt               ata+a+At a Att +atttatttatc+actaAtt  
+                LK031894.1 126386 CATTTTAATGGGAGTTG-ATTGGATTT---------------ATAGAGAT-ATATTAAATTTATTTATCGACTAATT-- 126445
+                                  ****************9.*********...............99999999.99************************.. PP
+
+  PIN3_homologs_from_BLAST    378 ttgAaattAttAActatAtgtgaaaaaatcgtgaag 413   
+                                  ttgAaattAt+AAct+tAtgtgaaa aatcgtgaag
+                LK031894.1 126446 TTGAAATTATAAACTGTATGTGAAA-AATCGTGAAG 126480
+                                  ***********************98.999*999975 PP
+
+>> LK037066.1  Brassica napus genomic scaffold, scaffold_5280, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  310.9  40.2   2.7e-90         1       413 []      3323      3713 ..      3323      3713 ..      6477    0.97
+
+  Alignment:
+  score: 310.9 bits
+  PIN3_homologs_from_BLAST    1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaattttgcatattt 83  
+                                cttc+tactctgttttattcctt a aaa             aAgc    taaaagg t aaattccttaattttgcatattt
+                LK037066.1 3323 CTTCCTACTCTGTTTTATTCCTTAAAAAA-------------AAGC----TAAAAGGTTGAAATTCCTTAATTTTGCATATTT 3388
+                                799*****************998777764.............5665....889****************************** PP
+
+  PIN3_homologs_from_BLAST   84 tcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tatgatgttttgtcat.tt 164 
+                                tcgttgacatAtt AcccgtttacA+gatAaaagaAt+aAatta gttagt++AtaAAAtttA tatgatgttttgtcat tt
+                LK037066.1 3389 TCGTTGACATATTTACCCGTTTACACGATAAAAGAATCAAATTACGTTAGTCCATAAAATTTAtTATGATGTTTTGTCATtTT 3471
+                                ********************************************************************************999 PP
+
+  PIN3_homologs_from_BLAST  165 g...............tggaaattaAaattcagAtaaaaaa.attggggAtggAccAtccgacAtgtggggcaAtggtgtgag 231 
+                                g               tggaaattaAaa+t a Ataaaaa+  t ggggAtggAccAtcc acAtgtggggcaAtgg gtgag
+                LK037066.1 3472 GaagaaatattaaaagTGGAAATTAAAACT-AAATAAAAAGtGTGGGGGATGGACCATCCAACATGTGGGGCAATGGAGTGAG 3553
+                                9***************************99.99999999995555************************************** PP
+
+  PIN3_homologs_from_BLAST  232 tgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtcgtcAtggtccccatttttatgggagtt 314 
+                                + tcttAttA  tAaat gtaatggtggAcgAcAtggtctcgtgt+gtt atagtcgtcAtggtccccatttt atgggagtt
+                LK037066.1 3554 CATCTTATTA--TAAATTGTAATGGTGGACGACATGGTCTCGTGTCGTTAATAGTCGTCATGGTCCCCATTTTAATGGGAGTT 3634
+                                *********9..9********************************************************************** PP
+
+  PIN3_homologs_from_BLAST  315 tgattggattttttttttacaattttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatAtg 397 
+                                + attggattt               ata+a+At a Att +atttatttatc+actaAtt  ttgAaattAt+AAct+tAtg
+                LK037066.1 3635 G-ATTGGATTT---------------ATAGAGAT-ATATTAAATTTATTTATCGACTAATT--TTGAAATTATAAACTGTATG 3698
+                                9.*********...............99999999.99************************..******************** PP
+
+  PIN3_homologs_from_BLAST  398 tgaaaaaatcgtgaag 413 
+                                tgaaa aatcgtgaag
+                LK037066.1 3699 TGAAA-AATCGTGAAG 3713
+                                ***98.999*999975 PP
+
+>> LK031787.1  Brassica napus genomic scaffold, scaffold_1, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  300.3  52.3   4.4e-87         1       413 []   5042050   5041602 ..   5042050   5041602 ..   5197798    0.94
+
+  Alignment:
+  score: 300.3 bits
+  PIN3_homologs_from_BLAST       1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa............ 63     
+                                   cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa            
+                LK031787.1 5042050 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattatatc 5041975
+                                   78999**999999**************99997.7789999************************99*********** PP
+
+  PIN3_homologs_from_BLAST      64 ........ttccttaattttgcatattttcgtt.gacatAttaAcccgtttacAtg....atAaaagaAttaAatta 127    
+                                           ttcctta ttttgcatattttcgtt  acatAttaAcccgtttacA+g     tAaaaga +taAa+t 
+                LK031787.1 5041974 ctaggacaTTCCTTATTTTTGCATATTTTCGTTtAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAAAATT 5041898
+                                   *******************************9989**********************999**************998 PP
+
+  PIN3_homologs_from_BLAST     128 tgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAtggAcc 204    
+                                   t  tagt++At AAAtttAtatga             gt gaaat aAaa t agAt aaaaaatt gggAtggAcc
+                LK031787.1 5041897 T--TAGTCCAT-AAATTTATATGA-------------GTTGAAATAAAAAATTAGATTAAAAAATTAGGGATGGACC 5041837
+                                   5..********.***********9.............5557999999999999************************ PP
+
+  PIN3_homologs_from_BLAST     205 AtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg 281    
+                                   AtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg
+                LK031787.1 5041836 ATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCGTGTTGTTG 5041760
+                                   ***************************************************************************** PP
+
+  PIN3_homologs_from_BLAST     282 atagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaatttt.atatatAta........ 349    
+                                   atagtc tcAtggtcccc+ttt tatgggagtt+ attggatttt+tt  +a  at+t+ atat    a        
+                LK031787.1 5041759 ATAGTCCTCATGGTCCCCCTTTATATGGGAGTTG-ATTGGATTTTCTTAAAAATATATAcATAT----Atatttata 5041688
+                                   *********************************9.*********88887555444433333333....233558888 PP
+
+  PIN3_homologs_from_BLAST     350 ........................aaAttttatttatttatctactaAttgtttgAaattAttAActatAtgtgaaa 402    
+                                                           a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tAtgtgaaa
+                LK031787.1 5041687 gtttattgtatgcacaaaaaatatATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTATGTGAAA 5041613
+                                   99999999999999999999999999************************..************************* PP
+
+  PIN3_homologs_from_BLAST     403 aaatcgtgaag 413    
+                                   aaatcgtgaag
+                LK031787.1 5041612 AAATCGTGAAG 5041602
+                                   ********986 PP
+
+>> LK031996.1  Brassica napus genomic scaffold, scaffold_210, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  276.3  27.9   8.5e-80         3       410 ..    701289    701813 ..    701277    701816 ..    933222    0.94
+
+  Alignment:
+  score: 276.3 bits
+  PIN3_homologs_from_BLAST      3 tcgtactctgttttattcctttataaagtttttagtttcaaA........gctatttaaaaggattaaattccttaatt 73    
+                                  tc  actctgtttt+ttccttt++aaagt+ t+ag ttca A        gctattta   gga  aaa+tccttaatt
+                LK031996.1 701289 TCTGACTCTGTTTTGTTCCTTTTGAAAGTCATCAGATTCAGAccatacgtGCTATTTAGTCGGA--AAAGTCCTTAATT 701365
+                                  445567777*********************************9999999999****99998885..8889********* PP
+
+  PIN3_homologs_from_BLAST     74 ttgcatattttcgttgacatAttaAcccgt...ttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.ta 148   
+                                  ttgcatattttcgttgacatAt+aAcccgt   ttacA++atA+aa aA+taAatta gttagttaAt AAAtt A t 
+                LK031996.1 701366 TTGCATATTTTCGTTGACATATCAACCCGTttaTTACACAATAGAATAAATAAATTA-GTTAGTTAAT-AAATTAAaTT 701442
+                                  ******************************888899********************9.9*********.8888888777 PP
+
+  PIN3_homologs_from_BLAST    149 tga...tgttttgtcat.ttg...........tggaaattaAaattcagAtaaaaaa.attggggAtggAccAtccgac 211   
+                                  t a   +gttttgtcat ttg           tg aaattaAaatt agAt+aaaaa attggg At gAccAtccgac
+                LK031996.1 701443 TAAagtGGTTTTGTCATgTTGaagaaattttaTGAAAATTAAAATT-AGATTAAAAAcATTGGGTATTGACCATCCGAC 701520
+                                  6666779**********9999***********************99.99999999998********************* PP
+
+  PIN3_homologs_from_BLAST    212 AtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagt 286   
+                                  A+gtggggcaAtggtgtga tg+c    ttA tAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgat gt
+                LK031996.1 701521 AGGTGGGGCAATGGTGTGAATGCCttaaTTAATAGATAAATGGTAATGGTGGACGACATGGTCTCGTGTTGTTGATGGT 701599
+                                  ************************88888899*********************************************** PP
+
+  PIN3_homologs_from_BLAST    287 cgtcAtggtccccattttt...................................atgggagtttgattggatttttttt 330   
+                                  cgtcAtggtcccc+ttttt                                   a+g  +gtttg tt +a + +t+t+
+                LK031996.1 701600 CGTCATGGTCCCCGTTTTTtttttttttgataaattgtaaatatcataacttgaACGAAGGTTTGGTTACAACAATGTC 701678
+                                  ***************9999999********************************************************* PP
+
+  PIN3_homologs_from_BLAST    331 ttacaattttatatatAtaaaAttttatttattt.........................atctactaAttgtttgAaat 384   
+                                  ++ac+a++ttat ++tAt  aA ++++t+t+tt+                         a c+++taA    ++gA at
+                LK031996.1 701679 GAACCAGATTATGCTTAT-GAAGCCAGTCTGTTCttaagggccgcaaaaaagttaaaaaAACCCATAAGAAACCGAGAT 701756
+                                  ******************.9*************************************999999999***999******* PP
+
+  PIN3_homologs_from_BLAST    385 tA...............................ttAActatAtgtgaaaaaatcgtg 410   
+                                  tA                                +AAct +At+ gaaaaa+ c+  
+                LK031996.1 701757 TAagcctaagacaaaccggtaatggaaaaccttAAAACTTAATAGGAAAAAGACCAA 701813
+                                  **9*********99**99999999999999998889999*********999888765 PP
+
+>> LK032144.1  Brassica napus genomic scaffold, scaffold_358, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  250.3  36.3   6.6e-72         1       353 [.     12852     12507 ..     12852     12485 ..    631616    0.90
+
+  Alignment:
+  score: 250.3 bits
+  PIN3_homologs_from_BLAST     1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa................ 63   
+                                 cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa                
+                LK032144.1 12852 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattatatcctag 12773
+                                 789999*999999**************99997.7789999************************9**************** PP
+
+  PIN3_homologs_from_BLAST    64 ....ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAattatgttagtta 136  
+                                     ttcctta ttttgcatattttcgtt acatAttaAcccgtttacA+g     tAaaaga +taAa+t t  tagt++
+                LK032144.1 12772 gacaTTCCTTATTTTTGCATATTTTCGTTAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAAAATTT--TAGTCC 12694
+                                 ****************************************************999**************9985..****** PP
+
+  PIN3_homologs_from_BLAST   137 AtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAtggAccAtccgacAtgtgg 217  
+                                 At AAAtttAtatga+                            + A  aaaaaatt gggAtggAccAtccgacA+gtgg
+                LK032144.1 12693 AT-AAATTTATATGAGT--------------------------TGAAATAAAAAATTAGGGATGGACCATCCGACAGGTGG 12640
+                                 **.********999832..........................24455567778999************************ PP
+
+  PIN3_homologs_from_BLAST   218 ggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtcgtcAtggtccc 298  
+                                 ggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtc tcAtggtccc
+                LK032144.1 12639 GGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCGTGTTGTTGATAGTCCTCATGGTCCC 12559
+                                 ********************************************************************************* PP
+
+  PIN3_homologs_from_BLAST   299 catttttatgggagtttgattggattttttttttacaattttatatatAtaaaAt 353  
+                                 c+ttt tatgggag t+ attggatttt+tt  +a  at+t ata+atAt a At
+                LK032144.1 12558 CCTTTATATGGGAGGTG-ATTGGATTTTCTTAAAAATATAT-ATACATAT-ATAT 12507
+                                 ****************9.********988877444333332.34444444.3333 PP
+
+>> LK031787.1  Brassica napus genomic scaffold, scaffold_1, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  104.9  46.4   8.6e-28         2       412 ..   5041603   5041966 ..   5041598   5041967 ..   5197798    0.86
+
+  Alignment:
+  score: 104.9 bits
+  PIN3_homologs_from_BLAST       2 ttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaatttt 75     
+                                   ttc +     g ttt ttc   +ata+agttt ta tttcaaA ++a+t   taaa+  attaaa           t
+                LK031787.1 5041603 TTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA-----------T 5041661
+                                   44444.....999999999..99*************************99999999999999999...........7 PP
+
+  PIN3_homologs_from_BLAST      76 gcatatt.ttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttAtatga 151    
+                                     atatt tt+gt++a a+A taA c  t  a    atA a g At  A tt       ttaA+aAAAt++A     
+                LK031787.1 5041662 ATATATTtTTTGTGCATACAATAAACTATAAAT---ATATATGTATATATTT-------TTAAGAAAATCCA----- 5041723
+                                   77776541678**************98774333...4667777777777777.......789**********..... PP
+
+  PIN3_homologs_from_BLAST     152 tgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAt 223    
+                                                      at+aA++++ca Ataaa+     ggggA+     ggAc Atc  + A+ +g g c+At
+                LK031787.1 5041724 -------------------ATCAACTCCCATATAAAG-----GGGGACcatgaGGACTATCAACAACACGAGACCAT 5041776
+                                   ...................******************.....*********************************** PP
+
+  PIN3_homologs_from_BLAST     224 ggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..At 292    
+                                   g++gt     +c    ttA+ A  tA +t  t        AcgAcA    ctc + ++ ttg  ++a++ gtc  At
+                LK031787.1 5041777 GTCGT-----CCaccaTTACCATTTATCTAAT--------ACGACA----CTCACACCATTGccCCACCTGTCggAT 5041836
+                                   *****.....77778*****************........******....************9999*********** PP
+
+  PIN3_homologs_from_BLAST     293 ggtcc....ccatttttatgggagtttgattggattttttttttacaatttt...atatatAta.....aaAtttta 357    
+                                   ggtcc    c a tttt        tt at+  atttttt ttt caa+t+    a at+tAt+     aaAtttta
+                LK031787.1 5041837 GGTCCatccCTAATTTT--------TTAATCTAATTTTTTATTT-CAACTCAtatAAATTTATGgactaAAATTTTA 5041904
+                                   **998776466677776........888***9999997766644.444433334588888888899998999***** PP
+
+  PIN3_homologs_from_BLAST     358 tttatttatctactaAttgtttgAa...attA......ttAAct.atAtgtgaaaaaatcgtgaa 412    
+                                   + t ttt   tac+aA +gt+t Aa   +ttA      t+AAc+ a At tg+aaaaat  +gaa
+                LK031787.1 5041905 GGTCTTT---TACGAAACGTGTAAAcggGTTAatatgtTAAACGaAAATATGCAAAAATAAGGAA 5041966
+                                   ***9999...8888888888888878776777666666669***99************9999886 PP
+
+>> LK032144.1  Brassica napus genomic scaffold, scaffold_358, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.9  25.4   1.5e-16       105       412 ..     12502     12768 ..     12481     12769 ..    631616    0.84
+
+  Alignment:
+  score: 67.9 bits
+  PIN3_homologs_from_BLAST   105 tacAtg.atAaaagaAttaAattatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAt 184  
+                                 ta A + atA a g At  A  t t     ttaA+aAAAt++A                        at+a ++++ca At
+                LK032144.1 12502 TATAAAtATATATGTATATATATTT-----TTAAGAAAATCCA------------------------ATCACCTCCCATAT 12553
+                                 4444445666666777666666664.....8899999999999........................9999999******* PP
+
+  PIN3_homologs_from_BLAST   185 aaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatgg 256  
+                                 aaa+     ggggA+     ggAc Atc  + A+ +g g c+Atg++gt     +c    ttA+ A +tA +t  t     
+                LK032144.1 12554 AAAG-----GGGGACcatgaGGACTATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTTATCTAAT----- 12619
+                                 ****.....****************************************.....77888*****************..... PP
+
+  PIN3_homologs_from_BLAST   257 tggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc....ccatttttatgggagtttgattggattttttt 329  
+                                    AcgAcA    ctc + ++ ttg  ++a++ gtc  Atggtcc    c a tttt        tt att  a  t  t 
+                LK032144.1 12620 ---ACGACA----CTCACACCATTGccCCACCTGTCggATGGTCCatccCTAATTTT--------TT-ATTTCAACTCATA 12684
+                                 ...******....************9999*************998775455555555........45.6666666663333 PP
+
+  PIN3_homologs_from_BLAST   330 tttacaattttatatatAta.....aaAttttatttatttatctactaAttgtttgAa...attA.....ttAAct.atAt 396  
+                                 t          a at+tAt+     aaAtttta+ t ttt   tac+aA +gt+t Aa   +ttA     ttAAc+ a At
+                LK032144.1 12685 T----------AAATTTATGgactaAAATTTTAGGTCTTT---TACGAAACGTGTAAAcggGTTAatatgTTAACGaAAAT 12752
+                                 3..........88888888888888999*********999...899999999999999999999988888999***9**** PP
+
+  PIN3_homologs_from_BLAST   397 gtgaaaaaatcgtgaa 412  
+                                  tg+aaaaat  +gaa
+                LK032144.1 12753 ATGCAAAAATAAGGAA 12768
+                                 *********9999886 PP
+
+>> LK032180.1  Brassica napus genomic scaffold, scaffold_394, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   44.6   9.6   1.8e-09       196       351 ..    198870    198710 ..    198890    198687 ..    590342    0.77
+
+  Alignment:
+  score: 44.6 bits
+  PIN3_homologs_from_BLAST    196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtggtctc 272   
+                                  ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt g ctc
+                LK032180.1 198870 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCATATTATAGAACTGGTCGTTGTGGAaAGACATAG-CTC 198794
+                                  689****************95667799**988663.666789***************99999999637*****99.9** PP
+
+  PIN3_homologs_from_BLAST    273 gtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaattttatata 345   
+                                  gtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +attt a  t 
+                LK032180.1 198793 GTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACATTTGACGTG 198716
+                                  ***8761567*******************98777533789999999.99999877631112222333333333355555 PP
+
+  PIN3_homologs_from_BLAST    346 tAtaaa 351   
+                                  tAt+a 
+                LK032180.1 198715 TATGAT 198710
+                                  555544 PP
+
+>> LK032023.1  Brassica napus genomic scaffold, scaffold_237, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   42.3   8.2     9e-09       196       350 ..    312215    312374 ..    312195    312397 ..    862336    0.77
+
+  Alignment:
+  score: 42.3 bits
+  PIN3_homologs_from_BLAST    196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtggtctc 272   
+                                  ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt   ctc
+                LK032023.1 312215 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCATATTATAGAACTGGTCGTTGTGGAaAGACATA-CCTC 312291
+                                  689****************95667799**988663.666789***************99999999637****75.6*** PP
+
+  PIN3_homologs_from_BLAST    273 gtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaattttatata 345   
+                                  gtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +attt a  t 
+                LK032023.1 312292 GTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACATTTGACGTG 312369
+                                  ***8761567*******************98777533789999999.99999877631112223333333333355555 PP
+
+  PIN3_homologs_from_BLAST    346 tAtaa 350   
+                                  tAt+a
+                LK032023.1 312370 TATGA 312374
+                                  55544 PP
+
+>> LK031996.1  Brassica napus genomic scaffold, scaffold_210, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   35.9  28.7   7.4e-07       183       410 ..    701623    701358 ..    701645    701355 ..    933222    0.71
+
+  Alignment:
+  score: 35.9 bits
+  PIN3_homologs_from_BLAST    183 AtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatggta 252   
+                                  A aaaaaaa  ggggA+      gAccAtc  + A+ +g g c+Atg++gt     +c    ttA+ A  tA +t  ta
+                LK031996.1 701623 AAAAAAAAAACGGGGACcatgaCGACCATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTTATCTATTA 701550
+                                  23333344666*****9999888****************************.....77778****************** PP
+
+  PIN3_homologs_from_BLAST    253 atggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtc....cccatttttatgggagtttgattggat 323   
+                                  at     A g cA     tc + ++ ttg  ++a++ gtc  Atggtc    ccca t tt       ttt at+  at
+                LK031996.1 701549 ATT----AAGGCA----TTCACACCATTGccCCACCTGTCggATGGTCaataCCCAATGTT-------TTTAATCTAAT 701486
+                                  997....555599....7***********9999**************86666566555544.......46667777776 PP
+
+  PIN3_homologs_from_BLAST    324 tttttttttacaattttatatatAta....................aaAttttatttatttatctactaAttgtttgAa 382   
+                                  ttt  ttt     + t a at+t t                     aaAttt+atttatt a   actaAtt  tt A 
+                LK031996.1 701485 TTTAATTT----TCATAAAATTTCTTcaacatgacaaaaccactttAAATTTAATTTATTAACTAACTAATTTATTTAT 701411
+                                  66322211....1111222222222233333335556666666677999999999999999777777777665444443 PP
+
+  PIN3_homologs_from_BLAST    383 attA........................ttAAct.atAtgtgaaaaaatcgtg 410   
+                                    tA                        t AAc+ a At tg+aaaa t  +g
+                LK031996.1 701410 TCTAttgtgtaataaacgggttgatatgTCAACGaAAATATGCAAAATTAAGG 701358
+                                  22335556666666666666666666667788888888888888877776666 PP
+
+>> LK032144.1  Brassica napus genomic scaffold, scaffold_358, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   31.2  20.6     2e-05       339       413 .]     11382     11311 ..     11404     11311 ..    631616    0.85
+
+  Alignment:
+  score: 31.2 bits
+  PIN3_homologs_from_BLAST   339 ttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413  
+                                  +a a atAt a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tAtgtgaaaaaatcgtgaag
+                LK032144.1 11382 ACAAAAATAT-ATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTATGTGAAAAAATCGTGAAG 11311
+                                 2367788888.99************************..*********************************986 PP
+
+>> LK031996.1  Brassica napus genomic scaffold, scaffold_210, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.1  16.7   8.7e-05       288       412 ..    701961    702066 ..    701957    702067 ..    933222    0.76
+
+  Alignment:
+  score: 29.1 bits
+  PIN3_homologs_from_BLAST    288 gtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttatttatttat 366   
+                                    cAtggtccc +tttttatgggagtt  attg attt               atata+At    t t a  tatttat
+                LK031996.1 701961 ACCATGGTCCC-GTTTTTATGGGAGTTA-ATTGTATTT---------------ATATAGAT-TTCTATGACATATTTAT 702021
+                                  568*****986.677999********99.********9...............55555555.22222334455666666 PP
+
+  PIN3_homologs_from_BLAST    367 ctactaAttgtttgAaattAttAActatAtgtgaaaa.aatcgtgaa 412   
+                                    +ct+Att  ttgAaattAt+AAct+tAtgt aaaa a tcgtgaa
+                LK031996.1 702022 TACCTGATT--TTGAAATTATAAACTGTATGTTAAAAgATTCGTGAA 702066
+                                  66*******..********************8766532667887776 PP
+
+>> LK031894.1  Brassica napus genomic scaffold, scaffold_108, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.5  21.0   0.00014       173       412 ..    126402    126135 ..    126424    126134 ..   1340449    0.69
+
+  Alignment:
+  score: 28.5 bits
+  PIN3_homologs_from_BLAST    173 taAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAg 242   
+                                  +aA++++   At+aaa    tggggA+      gAc At   + A+ +g g c+Atg++gt     +c    ttA+ A 
+                LK031894.1 126402 CAACTCC--CATTAAA---ATGGGGACcatgaCGACTATTAACGACACGAGACCATGTCGT-----CCaccaTTACAAT 126334
+                                  4555444..3444444...47*****9999888****************************.....7787788888887 PP
+
+  PIN3_homologs_from_BLAST    243 atAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc..........ccatttttat 307   
+                                   tA a   t        A gAc     ctc + ++ ttg  ++a+  gt   Atggtcc          c  tttttat
+                LK031894.1 126333 TTATA--AT--------AAGACG----CTCACTCCATTGccCCACATGTTggATGGTCCatcccccaaaC--TTTTTAT 126271
+                                  77644..44........446666....************7777788888788*****9888654322222..3444433 PP
+
+  PIN3_homologs_from_BLAST    308 gggagt.ttgattggattttttttttacaattttatatatAta.................................... 349   
+                                     agt tt+att     tttt             tat+t t                                     
+                LK031894.1 126270 TTTAGTtTTAATTTCCACTTTTAA-----------TATTTCTTcaaaatgacaaaacatcataataaattttatggact 126203
+                                  222222022333333333322222...........22222111222222233355555556667767777777778888 PP
+
+  PIN3_homologs_from_BLAST    350 ....aaAttttatttatttatctactaAttgtttgAaattAttAAct.atAtgtgaaaaaatcgtgaa 412   
+                                       aAttt+att  tttatc+  taA +g++t Aa  t t AAc+ a At tg+aaaa t  +gaa
+                LK031894.1 126202 aacaTAATTTAATTCTTTTATCGTGTAAACGGGTAAATATGTCAACGaAAATATGCAAAATTAAGGAA 126135
+                                  8776677888888888999****************997777899***9**********9999988876 PP
+
+>> LK037066.1  Brassica napus genomic scaffold, scaffold_5280, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   27.5  20.8   0.00028       172       412 ..      3636      3369 ..      3658      3368 ..      6477    0.74
+
+  Alignment:
+  score: 27.5 bits
+  PIN3_homologs_from_BLAST  172 ttaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatA 245 
+                                t+aA++++   At+aaa    tggggA+      gAc At   + A+ +g g c+Atg++gt     +c    ttA+ A  tA
+                LK037066.1 3636 TCAACTCC--CATTAAA---ATGGGGACcatgaCGACTATTAACGACACGAGACCATGTCGT-----CCaccaTTACAATTTA 3564
+                                55555544..4444444...47*****9999888****************************.....7777799999888877 PP
+
+  PIN3_homologs_from_BLAST  246 aatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc........ccatttttatgggagtttg 316 
+                                 a              g  Atg  ctc + ++ ttg  ++a+  gt   Atggtcc        c  tttttat   + ttt+
+                LK037066.1 3563 TAATAA----------G--ATG--CTCACTCCATTGccCCACATGTTggATGGTCCatcccccaCACTTTTTATTTAGTTTTA 3495
+                                554333..........3..333..9***********7777778888788*****99998877776778999988888888888 PP
+
+  PIN3_homologs_from_BLAST  317 attggattttttttttacaattttatatatAta..............................aaAttttatttatttatcta 369 
+                                att     tttt  t+    +tt a a ++A a                               aAttt att  tttatc+ 
+                LK037066.1 3494 ATTTCCACTTTTAATATTT-CTTCAAAATGACAaaacatcataataaattttatggactaacgTAATTTGATTCTTTTATCGT 3413
+                                8888777765554433222.2222222222222344444455566566666666677777775567777778888888***** PP
+
+  PIN3_homologs_from_BLAST  370 ctaAttgtttgAaattAttAAct.atAtgtgaaaaaatcgtgaa 412 
+                                 taA +g++t Aa  t t AAc+ a+At tg+aaaa t  +gaa
+                LK037066.1 3412 GTAAACGGGTAAATATGTCAACGaAAATATGCAAAATTAAGGAA 3369
+                                **********9997777899***9**********9999988876 PP
+
+>> LK032144.1  Brassica napus genomic scaffold, scaffold_358, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   19.0  21.4       0.1         1       101 [.     11311     11396 ..     11307     11406 ..    631616    0.89
+
+  Alignment:
+  score: 19.0 bits
+  PIN3_homologs_from_BLAST     1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaattttgca 78   
+                                 cttc +     g ttt ttc   +ata+agttt ta tttcaaA  +a+t   taaa+  attaaa           t  a
+                LK032144.1 11311 CTTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA-----------TATA 11373
+                                 344444.....999999999..99**************************99999999********...........9*** PP
+
+  PIN3_homologs_from_BLAST    79 tattttcgttgacatAttaAccc 101  
+                                 tatttt+gt++a a+A taA c 
+                LK032144.1 11374 TATTTTTGTGCATACAATAAACT 11396
+                                 ****************9998775 PP
+
+>> LK032127.1  Brassica napus genomic scaffold, scaffold_341, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   13.1  19.3       6.1         5       171 ..    382751    382541 ..    382755    382519 ..    649944    0.71
+
+  Alignment:
+  score: 13.1 bits
+  PIN3_homologs_from_BLAST      5 gtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaattttgcatattt 83    
+                                  gtactctg ttt+t   t t +   gt+t t+ ttt a A  +a+tta a+g  t+a   t+c   + tt   a at+t
+                LK032127.1 382751 GTACTCTGATTTGTCTTTCTGGTGTGTCTCTGTTTTTATACTCAGTTATATG--TGAGT-TTCCGTTCTTGAGAGATCT 382676
+                                  689**********9999999999999*******************9987754..45544.44444455566778999** PP
+
+  PIN3_homologs_from_BLAST     84 tcgttga...........catAttaAcccgt.......ttacAtgatAaaagaAttaAattatgttagttaAtaAAAtt 144   
+                                  t+gttga            atAt+ A  c t       tt  At+atAaaa aA t Aatta gttagttaAt A At 
+                LK032127.1 382675 TTGTTGAatcaaaaactaTATATCTAATCTTcaagctcTTCTATAATAAAACAACTTAATTAAGTTAGTTAAT-ACATA 382598
+                                  ****98622222222222445554444443334444457888999****************************.99999 PP
+
+  PIN3_homologs_from_BLAST    145 tAtatgatgttttgtcatttg..............................tggaaa 171   
+                                   At + at ttt  tcat  g                              tggaaa
+                LK032127.1 382597 GATTCTATTTTTCATCATCAGtaacggatcaacaacagcaaaggcacatgaTGGAAA 382541
+                                  999999999999999998777666655555555555555555555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                      20899  (1696400606 residues searched)
+Residues passing SSV filter:       954688489  (0.563); expected (0.02)
+Residues passing bias filter:      547426550  (0.323); expected (0.02)
+Residues passing Vit filter:       109957413  (0.0648); expected (0.003)
+Residues passing Fwd filter:        19303443  (0.0114); expected (3e-05)
+Total number of hits:                     16  (2.56e-06)
+# CPU time: 2175.59u 5.33s 00:36:20.92 Elapsed: 00:18:21.62
+# Mc/sec: 635.98
+//
+[ok]

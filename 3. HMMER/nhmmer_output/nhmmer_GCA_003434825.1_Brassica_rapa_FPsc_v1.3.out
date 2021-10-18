@@ -1,0 +1,231 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_003434825.1_Brassica_rapa_FPsc_v1.3.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence      start      end  Description
+    ------- ------ -----  --------      -----    -----  -----------
+    2.8e-92  316.0  43.6  CM010634.1 23862518 23862907 Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome s
+    5.9e-87  298.5  53.8  CM010634.1 20363548 20363100 Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome s
+    1.3e-27  102.9  47.5  CM010634.1 20363101 20363462 Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome s
+    6.6e-10   44.6   9.6  CM010634.1 11606826 11606986 Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome s
+    3.2e-05   29.1  20.5  CM010634.1 23862829 23862564 Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome s
+  ------ inclusion threshold ------
+        6.3   11.7  25.9  CM010637.1   318798   318578 Brassica rapa cultivar FPsc (B3) chromosome A10, whole genome 
+
+
+Annotation for each hit  (and alignments):
+>> CM010634.1  Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  316.0  43.6   2.8e-92         1       413 []  23862518  23862907 ..  23862518  23862907 ..  27477424    0.97
+
+  Alignment:
+  score: 316.0 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaatttt 75      
+                                    cttc+tactctgttttattcctt a aaa            aaA+     taaaagg t+aaattccttaatttt
+                CM010634.1 23862518 CTTCCTACTCTGTTTTATTCCTTAAAAAA------------AAAC-----TAAAAGGTTGAAATTCCTTAATTTT 23862575
+                                    799*****************999888886............4555.....899********************** PP
+
+  PIN3_homologs_from_BLAST       76 gcatattttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tat 149     
+                                    gcatattttcgtt acatAtt AcccgtttacA+gatAaaagaAt+aAattatgttagt++AtaAAAtttA tat
+                CM010634.1 23862576 GCATATTTTCGTTTACATATTTACCCGTTTACACGATAAAAGAATCAAATTATGTTAGTCCATAAAATTTAtTAT 23862650
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      150 gatgttttgtcat.ttg..............tggaaattaAaattcagAtaaaaaaatt.ggggAtggAccAtcc 208     
+                                    gatgttttgtcat ttg              tggaaattaAaa+t a Ataaaaa+ tt ggggAtggAccAtcc
+                CM010634.1 23862651 GATGTTTTGTCATtTTGaagaaatattaaagTGGAAATTAAAACT-AAATAAAAAGTTTgGGGGATGGACCATCC 23862724
+                                    *************9999**************************99.9999999999888899************* PP
+
+  PIN3_homologs_from_BLAST      209 gacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgat 283     
+                                     acAtgtggggcaAtgg gtgag+gtcttAttA  tAaat gtaatggtggAcgAcAtggtctcgtgt+gtt at
+                CM010634.1 23862725 AACATGTGGGGCAATGGAGTGAGCGTCTTATTA--TAAATTGTAATGGTGGACGACATGGTCTCGTGTCGTTAAT 23862797
+                                    ********************************9..9*************************************** PP
+
+  PIN3_homologs_from_BLAST      284 agtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttat 358     
+                                    agtcgtcAtggtccccatttt atgggagtt+ attggattt               ata+a+At a Att +at
+                CM010634.1 23862798 AGTCGTCATGGTCCCCATTTTAATGGGAGTTG-ATTGGATTT---------------ATAGAGAT-ATATTAAAT 23862855
+                                    *******************************9.*********...............99999999.99******* PP
+
+  PIN3_homologs_from_BLAST      359 ttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413     
+                                    ttatttatc+actaAtt  ttgAaattAt+AAct+tAtgtgaaa aatcgtgaag
+                CM010634.1 23862856 TTATTTATCGACTAATT--TTGAAATTATAAACTGTATGTGAAA-AATCGTGAAG 23862907
+                                    *****************..***********************98.999*999975 PP
+
+>> CM010634.1  Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  298.5  53.8   5.9e-87         1       413 []  20363548  20363100 ..  20363548  20363100 ..  27477424    0.94
+
+  Alignment:
+  score: 298.5 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+                CM010634.1 20363548 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 20363475
+                                    78999**999999**************99997.7789999************************99********* PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgtt.gacatAttaAcccgtttacAtg....atAaaagaAttaA 123     
+                                              tt ctta ttttgcatattttcgtt  acatAttaAcccgtttacA+g     tAaaaga +taA
+                CM010634.1 20363474 tcctaggacaTTTCTTATTTTTGCATATTTTCGTTtAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAA 20363400
+                                    **********9**********************9989**********************999************* PP
+
+  PIN3_homologs_from_BLAST      124 attatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggA 198     
+                                    a+t t  tagt++At AAAtttAtatga             gt gaaat aAaa t agAt aaaaaatt gggA
+                CM010634.1 20363399 AATTT--TAGTCCAT-AAATTTATATGA-------------GTTGAAATAAAAAATTAGATTAAAAAATTAGGGA 20363341
+                                    *9985..********.***********9.............5557999999999999****************** PP
+
+  PIN3_homologs_from_BLAST      199 tggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcg 273     
+                                    tggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcg
+                CM010634.1 20363340 TGGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCG 20363266
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      274 tgttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaatttt.atatatA 347     
+                                    tgttgttgatagtc tcAtggtcccc+ttt tatgggagtt+ attggatttt+tt  +a  at+t+ atat   
+                CM010634.1 20363265 TGTTGTTGATAGTCCTCATGGTCCCCCTTTATATGGGAGTTG-ATTGGATTTTCTTAAAAATATATAcATAT--- 20363195
+                                    *****************************************9.*********88887554444433333333... PP
+
+  PIN3_homologs_from_BLAST      348 ta................................aaAttttatttatttatctactaAttgtttgAaattAttAA 390     
+                                     a                                a Attt+atttatttatc+act+Att  ttgAaattAt+AA
+                CM010634.1 20363194 -AtatttatagtttattgtatgcacaaaaaatatATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAA 20363123
+                                    .23355888899999999999999999999999999************************..************* PP
+
+  PIN3_homologs_from_BLAST      391 ctatAtgtgaaaaaatcgtgaag 413     
+                                    ct+tAtgtgaaaaaatcgtgaag
+                CM010634.1 20363122 CTGTATGTGAAAAAATCGTGAAG 20363100
+                                    ********************986 PP
+
+>> CM010634.1  Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  102.9  47.5   1.3e-27         2       410 ..  20363101  20363462 ..  20363096  20363465 ..  27477424    0.85
+
+  Alignment:
+  score: 102.9 bits
+  PIN3_homologs_from_BLAST        2 ttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaatt 73      
+                                    ttc +     g ttt ttc   +ata+agttt ta tttcaaA ++a+t   taaa+  attaaa          
+                CM010634.1 20363101 TTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA---------- 20363158
+                                    44444.....999999999..99*************************99999999999999999.......... PP
+
+  PIN3_homologs_from_BLAST       74 ttgcatatt.ttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttAt 147     
+                                     t  atatt tt+gt++a a+A taA c  t  a    atA a g At  A tt       ttaA+aAAAt++A 
+                CM010634.1 20363159 -TATATATTtTTTGTGCATACAATAAACTATAAAT---ATATATGTATATATTT-------TTAAGAAAATCCA- 20363221
+                                    .777776541678**************98774333...4666777777777777.......789**********. PP
+
+  PIN3_homologs_from_BLAST      148 atgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtgg 217     
+                                                           at+aA++++ca Ataaa+     ggggA+     ggAc Atc  + A+ +g 
+                CM010634.1 20363222 -----------------------ATCAACTCCCATATAAAG-----GGGGACcatgaGGACTATCAACAACACGA 20363268
+                                    .......................******************.....***************************** PP
+
+  PIN3_homologs_from_BLAST      218 ggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagt 286     
+                                    g c+Atg++gt     +c    ttA+ A  tA +t  t        AcgAcA    ctc + ++ ttg  ++a++
+                CM010634.1 20363269 GACCATGTCGT-----CCaccaTTACCATTTATCTAAT--------ACGACA----CTCACACCATTGccCCACC 20363326
+                                    ***********.....77778*****************........******....************9999*** PP
+
+  PIN3_homologs_from_BLAST      287 cgtc..Atggtcc....ccatttttatgggagtttgattggattttttttttacaatttt...atatatAta... 349     
+                                     gtc  Atggtcc    c a tttt        tt at+  atttttt ttt caa+t+    a at+tAt+   
+                CM010634.1 20363327 TGTCggATGGTCCatccCTAATTTT--------TTAATCTAATTTTTTATTT-CAACTCAtatAAATTTATGgac 20363392
+                                    **********998776466677776........888***9999997766644.4444333345888888888999 PP
+
+  PIN3_homologs_from_BLAST      350 ..aaAttttatttatttatctactaAttgtttgAa...attA......ttAAct.atAtgtgaaaaaatcgtg 410     
+                                      aaAtttta+ t ttt   tac+aA +gt+t Aa   +ttA      t+AAc+ a At tg+aaaaat  + 
+                CM010634.1 20363393 taAAATTTTAGGTCTTT---TACGAAACGTGTAAAcggGTTAatatgtTAAACGaAAATATGCAAAAATAAGA 20363462
+                                    98999********9999...7888888888888877776776666666669***99*********99887665 PP
+
+>> CM010634.1  Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   44.6   9.6   6.6e-10       196       351 ..  11606826  11606986 ..  11606806  11607009 ..  27477424    0.77
+
+  Alignment:
+  score: 44.6 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt g
+                CM010634.1 11606826 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCATATTATAGAACTGGTCGTTGTGGAaAGACATAG 11606899
+                                    689****************95667799**988663.666789***************99999999637*****99 PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM010634.1 11606900 -CTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 11606972
+                                    .9*****8761567*******************98777533789999999.999998776311122223333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaaa 351     
+                                    tt a  t tAt+a 
+                CM010634.1 11606973 TTGACGTGTATGAT 11606986
+                                    33355555555544 PP
+
+>> CM010634.1  Brassica rapa cultivar FPsc (B3) chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.1  20.5   3.2e-05       173       412 ..  23862829  23862564 ..  23862851  23862563 ..  27477424    0.70
+
+  Alignment:
+  score: 29.1 bits
+  PIN3_homologs_from_BLAST      173 taAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttA 238     
+                                    +aA++++   At+aaa    tggggA+      gAc At   + A+ +g g c+Atg++gt     +c    ttA
+                CM010634.1 23862829 CAACTCC--CATTAAA---ATGGGGACcatgaCGACTATTAACGACACGAGACCATGTCGT-----CCaccaTTA 23862765
+                                    5555544..3444444...47*****9999888****************************.....778778888 PP
+
+  PIN3_homologs_from_BLAST      239 ttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc.....cc...at 301     
+                                    + A +tA a   t        A gAc     ctc + ++ ttg  ++a+  gt   Atggtcc     cc    t
+                CM010634.1 23862764 CAATTTATA--AT--------AAGACG----CTCACTCCATTGccCCACATGTTggATGGTCCatcccCCaaaCT 23862704
+                                    888777644..44........446666....************7777888888789*****98886542222235 PP
+
+  PIN3_homologs_from_BLAST      302 ttttatgggagtttgattggattttttttttacaattttatatatAta........................... 349     
+                                    ttttat   + ttt+att     ttt             atat+t t                            
+                CM010634.1 23862703 TTTTATTTAGTTTTAATTTCCACTTTA------------ATATTTCTTcaaaatgacaaaacatcataataaatt 23862641
+                                    666665555555665655544433221............111111111222222222244444445556656666 PP
+
+  PIN3_homologs_from_BLAST      350 .............aaAttttatttatttatctactaAttgtttgAaattAttAAct.atAtgtgaaaaaatcgtg 410     
+                                                  aAttt att  tttatc+  taA +g++t Aa  t t+AAc+ a At tg+aaaa t  +g
+                CM010634.1 23862640 ttatggactaacaTAATTTGATTCTTTTATCGTGTAAACGGGTAAATATGTAAACGaAAATATGCAAAATTAAGG 23862566
+                                    6666688887775567777777888888***************999666678****9**********99999888 PP
+
+  PIN3_homologs_from_BLAST      411 aa 412     
+                                    aa
+                CM010634.1 23862565 AA 23862564
+                                    75 PP
+
+>> CM010637.1  Brassica rapa cultivar FPsc (B3) chromosome A10, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   11.7  25.9       6.3        36       245 ..    318798    318578 ..    318814    318566 ..  19914974    0.65
+
+  Alignment:
+  score: 11.7 bits
+  PIN3_homologs_from_BLAST     36 agtttcaaAgctatttaaaaggattaaattccttaattttgcatattttcgttgacatAttaAcccgtttacAtgatAa 114   
+                                  a ttt  aAg  a tt  aag  tt aatt ctt  tttt  at ttttc tt      ttaA   +t  acA+ga A 
+                CM010637.1 318798 ATTTTGTAAGTAACTTTGAAGCTTTGAATTTCTTCTTTTTTTATGTTTTCTTTT-----TTAATATATAGACACGAAAT 318725
+                                  56677778899999999999999999999*****************99998876.....46677778888999999888 PP
+
+  PIN3_homologs_from_BLAST    115 aagaAttaAatt.atgttagttaAtaAAAtttAtatga..tgttttgtcatttg.....tggaa..attaAaat...tc 180   
+                                      A++aAatt  t ttagt+    AAAtt At tg   + tt tgt a tt       g aa    taA at   +c
+                CM010637.1 318724 TCATAACAAATTtTTCTTAGTC----AAATTAATTTGGgcGTTTATGTTAGTTActgggCGTAAgaCATAATATgggCC 318650
+                                  8777766666650455566665....77899997776643555556666653323334544443102222322211122 PP
+
+  PIN3_homologs_from_BLAST    181 agAtaaaaaaattggggAt.........ggAc...cAtccgacAtgtggggcaAtggtgtgagtgtc.ttAttAgatA 245   
+                                   gA a aa a ttggg At         g Ac   cAt c+ cAtg      +Atggtgtga tgt  t At Ag tA
+                CM010637.1 318649 TGAAACAATAGTTGGGAATtgaggtttgGCACaggCATGCATCATG------CATGGTGTGAATGTGaTCATGAGTTA 318578
+                                  3333333334677888777333333332112233367777777776......48888888888887655566665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       5645  (629730994 residues searched)
+Residues passing SSV filter:       356522149  (0.566); expected (0.02)
+Residues passing bias filter:      204152063  (0.324); expected (0.02)
+Residues passing Vit filter:        42375372  (0.0673); expected (0.003)
+Residues passing Fwd filter:         7853113  (0.0125); expected (3e-05)
+Total number of hits:                      6  (2.94e-06)
+# CPU time: 263.28u 0.56s 00:04:23.83 Elapsed: 00:02:12.17
+# Mc/sec: 1967.61
+//
+[ok]

@@ -1,0 +1,530 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_000686985.2_rape_Cultivar_ZS11.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start      end  Description
+    ------- ------ -----  --------          -----    -----  -----------
+    7.7e-89  306.3  42.0  CM002774.2     39670063 39670452 Brassica napus cultivar ZS11 chromosome C6, whole genome s
+      1e-88  305.9  53.9  CM002765.2     18621165 18620718 Brassica napus cultivar ZS11 chromosome A7, whole genome s
+      2e-79  275.2  27.0  CM002770.2     22081716 22082240 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+    7.4e-72  250.3  36.0  CM002770.2     13316191 13315846 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+    1.2e-27  104.6  48.8  CM002765.2     18620719 18621081 Brassica napus cultivar ZS11 chromosome A7, whole genome s
+    7.7e-22   85.5  12.8  KZ289390.1        93687    93566 Brassica napus cultivar ZS11 unplaced genomic scaffold sca
+    1.5e-20   81.3  36.4  KZ289390.1        93991    93793 Brassica napus cultivar ZS11 unplaced genomic scaffold sca
+    1.7e-16   67.9  25.4  CM002770.2     13315841 13316107 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+    1.2e-09   45.3   9.6  CM002764.2     27164523 27164362 Brassica napus cultivar ZS11 chromosome A6, whole genome s
+    1.3e-09   45.2   8.8  CM002762.2     19309396 19309555 Brassica napus cultivar ZS11 chromosome A4, whole genome s
+    5.6e-09   43.1   9.0  CM002762.2     19301655 19301816 Brassica napus cultivar ZS11 chromosome A4, whole genome s
+      1e-08   42.3   8.2  CM002775.2     21426788 21426947 Brassica napus cultivar ZS11 chromosome C7, whole genome s
+    8.5e-07   35.9  28.7  CM002770.2     22082050 22081785 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+    2.3e-05   31.2  20.6  CM002770.2     13314721 13314650 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+    2.3e-05   31.2  20.6  KZ289390.1        92371    92300 Brassica napus cultivar ZS11 unplaced genomic scaffold sca
+     0.0001   29.1  16.7  CM002770.2     22082415 22082520 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+     0.0088   22.7  11.4  KZ289390.1        93560    93673 Brassica napus cultivar ZS11 unplaced genomic scaffold sca
+  ------ inclusion threshold ------
+       0.12   19.0  21.4  CM002770.2     13314650 13314735 Brassica napus cultivar ZS11 chromosome C2, whole genome s
+       0.12   19.0  21.4  KZ289390.1        92300    92385 Brassica napus cultivar ZS11 unplaced genomic scaffold sca
+
+
+Annotation for each hit  (and alignments):
+>> CM002774.2  Brassica napus cultivar ZS11 chromosome C6, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  306.3  42.0   7.7e-89         1       413 []  39670063  39670452 ..  39670063  39670452 ..  45505715    0.96
+
+  Alignment:
+  score: 306.3 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaatttt 75      
+                                    cttc+tactctgttttattcctt a aaa              Ag     taaaagg t aaattccttaatttt
+                CM002774.2 39670063 CTTCCTACTCTGTTTTATTCCTTAAAAAA--------------AG----CTAAAAGGTTGAAATTCCTTAATTTT 39670119
+                                    799*****************988766654..............44....5899********************** PP
+
+  PIN3_homologs_from_BLAST       76 gcatattttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tat 149     
+                                    gcatattttcgttgacatAtt AcccgtttacA+gatAaaagaAt+aAatta gttagt++AtaAAAtttA tat
+                CM002774.2 39670120 GCATATTTTCGTTGACATATTTACCCGTTTACACGATAAAAGAATCAAATTACGTTAGTCCATAAAATTTAtTAT 39670194
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      150 gatgttttgtcat.ttg...............tggaaattaAaattcagAtaaaaaa.attggggAtggAccAtc 207     
+                                    gatgttttgtcat ttg               tggaaattaAaa+t a Ataaaaa+  t ggggAtggAccAtc
+                CM002774.2 39670195 GATGTTTTGTCATtTTGaagaaatattaaaagTGGAAATTAAAACT-AAATAAAAAGtGTGGGGGATGGACCATC 39670268
+                                    *************9999***************************99.99999999995555************** PP
+
+  PIN3_homologs_from_BLAST      208 cgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttga 282     
+                                    c acAtgtggggcaAt g gtgag+gtcttAttA  tAaat gtaatggtggAcgAcAtggtctcgtgttgtt a
+                CM002774.2 39670269 CAACATGTGGGGCAATAGAGTGAGCGTCTTATTA--TAAATTGTAATGGTGGACGACATGGTCTCGTGTTGTTAA 39670341
+                                    *********************************9..9************************************** PP
+
+  PIN3_homologs_from_BLAST      283 tagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAtttta 357     
+                                    tagtcgtcAtggtccccatttt atgggagtt+ att gattt               ata+a+At a Att +a
+                CM002774.2 39670342 TAGTCGTCATGGTCCCCATTTTAATGGGAGTTG-ATTAGATTT---------------ATAGAGAT-ATATTAAA 39670399
+                                    ********************************9.*********...............99999999.99****** PP
+
+  PIN3_homologs_from_BLAST      358 tttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413     
+                                    tttatttatc+actaAtt  ttgAaattAt+AAct+tAtgtgaaa aatcgtgaag
+                CM002774.2 39670400 TTTATTTATCGACTAATT--TTGAAATTATAAACTGTATGTGAAA-AATCGTGAAG 39670452
+                                    ******************..***********************98.999*999975 PP
+
+>> CM002765.2  Brassica napus cultivar ZS11 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  305.9  53.9     1e-88         1       413 []  18621165  18620718 ..  18621165  18620718 ..  27426920    0.94
+
+  Alignment:
+  score: 305.9 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+                CM002765.2 18621165 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 18621092
+                                    78999**999999**************99997.7789999************************99********* PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAa 124     
+                                              ttcctta ttttgcatattttcgtt ac tAttaAcccgtttacA+g     tAaaagaA+taAa
+                CM002765.2 18621091 tcctaggacaTTCCTTATTTTTGCATATTTTCGTTAACGTATTAACCCGTTTACACGtttcGTAAAAGAACTAAA 18621017
+                                    **********************************************************999************** PP
+
+  PIN3_homologs_from_BLAST      125 ttatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt 199     
+                                    +t t  tagt+aAt AAAtttAtatga             gt gaaat aAaa t agAt aaaaaatt gggAt
+                CM002765.2 18621016 ATTT--TAGTCAAT-AAATTTATATGA-------------GTTGAAATAAAAAATTAGATTAAAAAATTAGGGAT 18620958
+                                    *985..********.***********9.............5557999999999999******************* PP
+
+  PIN3_homologs_from_BLAST      200 ggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgt 274     
+                                    ggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcgt
+                CM002765.2 18620957 GGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCGT 18620883
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      275 gttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaatttt.atatatAt 348     
+                                    gttgttgatagtc tcAtggtcccc+ttt tatgggagtt+ attggatttt+tt  +a  at+t+ atat    
+                CM002765.2 18620882 GTTGTTGATAGTCCTCATGGTCCCCCTTTATATGGGAGTTG-ATTGGATTTTCTTAAAAATATATAcATAT---- 18620813
+                                    ****************************************9.*********88887554444433333333.... PP
+
+  PIN3_homologs_from_BLAST      349 a................................aaAttttatttatttatctactaAttgtttgAaattAttAAc 391     
+                                    a                                a Attt+atttatttatc+act+Att  ttgAaattAt+AAc
+                CM002765.2 18620812 AtatttatagtttattgtatgcacaaaaaatatATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAAC 18620740
+                                    23355888899999999999999999999999999************************..************** PP
+
+  PIN3_homologs_from_BLAST      392 tatAtgtgaaaaaatcgtgaag 413     
+                                    t+tAtgtgaaaaaatcgtgaag
+                CM002765.2 18620739 TGTATGTGAAAAAATCGTGAAG 18620718
+                                    *******************986 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  275.2  27.0     2e-79         3       410 ..  22081716  22082240 ..  22081704  22082243 ..  68396429    0.94
+
+  Alignment:
+  score: 275.2 bits
+  PIN3_homologs_from_BLAST        3 tcgtactctgttttattcctttataaagtttttagtttcaaA........gctatttaaaaggattaaattcctt 69      
+                                    tc  actctgtttt+ttccttt++aaagt+ t+ag ttca A        gcta tta   gga  aaa+tcctt
+                CM002770.2 22081716 TCTGACTCTGTTTTGTTCCTTTTGAAAGTCATCAGATTCAGAccatacgtGCTACTTAGTCGGA--AAAGTCCTT 22081788
+                                    445567777*********************************9999999999***999998885..8889***** PP
+
+  PIN3_homologs_from_BLAST       70 aattttgcatattttcgttgacatAttaAcccgt...ttacAtgatAaaagaAttaAattatgttagttaAtaAA 141     
+                                    aattttgcatattttcgttgacatAt+aAcccgt   ttacA++atA+aa aA+taAatta gttagttaAt AA
+                CM002770.2 22081789 AATTTTGCATATTTTCGTTGACATATCAACCCGTttaTTACACAATAGAATAAATAAATTA-GTTAGTTAAT-AA 22081861
+                                    **********************************888899********************9.9*********.88 PP
+
+  PIN3_homologs_from_BLAST      142 AtttA.tatga...tgttttgtcat.ttg...........tggaaattaAaattcagAtaaaaaa.attggggAt 199     
+                                    Att A t t a   +gttttgtcat ttg           tg aaattaAaatt agAt+aaaaa attggg At
+                CM002770.2 22081862 ATTAAaTTTAAagtGGTTTTGTCATgTTGaagaaattttaTGAAAATTAAAATT-AGATTAAAAAcATTGGGTAT 22081935
+                                    888887776666779**********9999***********************99.99999999998********* PP
+
+  PIN3_homologs_from_BLAST      200 ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtc 270     
+                                     gAccAtccgacA+gtggggcaAtggtgtga tg+c    ttA tAgatAaatggtaatggtggAcgAcAtggtc
+                CM002770.2 22081936 TGACCATCCGACAGGTGGGGCAATGGTGTGAATGCCttaaTTAATAGATAAATGGTAATGGTGGACGACATGGTC 22082010
+                                    ************************************88888899******************************* PP
+
+  PIN3_homologs_from_BLAST      271 tcgtgttgttgatagtcgtcAtggtccccattttt...................................atggg 310     
+                                    tcgtgttgttgat gtcgtcAtggtcccc+ttttt                                   a+g  
+                CM002770.2 22082011 TCGTGTTGTTGATGGTCGTCATGGTCCCCGTTTTTtttttttttgataaattgtaaatatcataacttgaACGAA 22082085
+                                    *******************************9999999************************************* PP
+
+  PIN3_homologs_from_BLAST      311 agtttgattggattttttttttacaattttatatatAtaaaAttttatttattt..................... 364     
+                                    +gtttg tt +a + +t+t+++ac+a++ttat ++tAt  aA ++++t+t+tt+                     
+                CM002770.2 22082086 GGTTTGGTTACAACAATGTCGAACCAGATTATGCTTAT-GAAGCCAGTCTGTTCttaagggccgcaaaaaagtta 22082159
+                                    **************************************.9*********************************** PP
+
+  PIN3_homologs_from_BLAST      365 ....atctactaAttgtttgAaattA...............................ttAActatAtgtgaaaaa 404     
+                                        a c+++taA    ++gA attA                                +AAct +At+ gaaaaa
+                CM002770.2 22082160 aaaaAACCCATAAGAAACCGAGATTAagcctaagacaaaccggtaatggaaaaccttAAAACTTAATAGGAAAAA 22082234
+                                    **999999999**9999*********9*********999*99999999999999998889999*********999 PP
+
+  PIN3_homologs_from_BLAST      405 atcgtg 410     
+                                    + c+  
+                CM002770.2 22082235 GACCAA 22082240
+                                    888765 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  250.3  36.0   7.4e-72         1       353 [.  13316191  13315846 ..  13316191  13315825 ..  68396429    0.90
+
+  Alignment:
+  score: 250.3 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+                CM002770.2 13316191 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 13316118
+                                    789999*999999**************99997.7789999************************9********** PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAa 124     
+                                              ttcctta ttttgcatattttcgtt acatAttaAcccgtttacA+g     tAaaaga +taAa
+                CM002770.2 13316117 tcctaggacaTTCCTTATTTTTGCATATTTTCGTTAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAAA 13316043
+                                    **********************************************************999************** PP
+
+  PIN3_homologs_from_BLAST      125 ttatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt 199     
+                                    +t t  tagt++At AAAtttAtatga+                            + A  aaaaaatt gggAt
+                CM002770.2 13316042 ATTT--TAGTCCAT-AAATTTATATGAGT--------------------------TGAAATAAAAAATTAGGGAT 13315997
+                                    9985..********.********999832..........................24455567778999****** PP
+
+  PIN3_homologs_from_BLAST      200 ggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgt 274     
+                                    ggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcgt
+                CM002770.2 13315996 GGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCGT 13315922
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      275 gttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAta 349     
+                                    gttgttgatagtc tcAtggtcccc+ttt tatgggag t+ attggatttt+tt  +a  at+t ata+atAt 
+                CM002770.2 13315921 GTTGTTGATAGTCCTCATGGTCCCCCTTTATATGGGAGGTG-ATTGGATTTTCTTAAAAATATAT-ATACATAT- 13315850
+                                    ****************************************9.********988777444333332.34444444. PP
+
+  PIN3_homologs_from_BLAST      350 aaAt 353     
+                                    a At
+                CM002770.2 13315849 ATAT 13315846
+                                    3333 PP
+
+>> CM002765.2  Brassica napus cultivar ZS11 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  104.6  48.8   1.2e-27         2       412 ..  18620719  18621081 ..  18620714  18621082 ..  27426920    0.87
+
+  Alignment:
+  score: 104.6 bits
+  PIN3_homologs_from_BLAST        2 ttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaatt 73      
+                                    ttc +     g ttt ttc   +ata+agttt ta tttcaaA ++a+t   taaa+  attaaa          
+                CM002765.2 18620719 TTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA---------- 18620776
+                                    44444.....999999999..999************************99999999999999999.......... PP
+
+  PIN3_homologs_from_BLAST       74 ttgcatatt.ttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttAt 147     
+                                     t  atatt tt+gt++a a+A taA c  t  a    atA a g At  A tt       ttaA+aAAAt++A 
+                CM002765.2 18620777 -TATATATTtTTTGTGCATACAATAAACTATAAAT---ATATATGTATATATTT-------TTAAGAAAATCCA- 18620839
+                                    .777776541678**************98774333...4667777777777777.......789**********. PP
+
+  PIN3_homologs_from_BLAST      148 atgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtgg 217     
+                                                           at+aA++++ca Ataaa+     ggggA+     ggAc Atc  + A+ +g 
+                CM002765.2 18620840 -----------------------ATCAACTCCCATATAAAG-----GGGGACcatgaGGACTATCAACAACACGA 18620886
+                                    .......................******************.....***************************** PP
+
+  PIN3_homologs_from_BLAST      218 ggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagt 286     
+                                    g c+Atg++gt     +c    ttA+ A  tA +t  t        AcgAcA    ctc + ++ ttg  ++a++
+                CM002765.2 18620887 GACCATGTCGT-----CCaccaTTACCATTTATCTAAT--------ACGACA----CTCACACCATTGccCCACC 18620944
+                                    ***********.....77778*****************........******....************9999*** PP
+
+  PIN3_homologs_from_BLAST      287 cgtc..Atggtcc....ccatttttatgggagtttgattggattttttttttacaatttt...atatatAta... 349     
+                                     gtc  Atggtcc    c a tttt        tt at+  atttttt ttt caa+t+    a at+tAt    
+                CM002765.2 18620945 TGTCggATGGTCCatccCTAATTTT--------TTAATCTAATTTTTTATTT-CAACTCAtatAAATTTATTgac 18621010
+                                    **********998776466677776........888***9999997766644.4433333334677777776888 PP
+
+  PIN3_homologs_from_BLAST      350 ..aaAttttatttatttatctactaAttgtttgAa...attA.....ttAAct.atAtgtgaaaaaatcgtgaa 412     
+                                      aaAtttta+tt ttt   tac+aA +gt+t Aa   +ttA     ttAAc+ a At tg+aaaaat  +gaa
+                CM002765.2 18621011 taAAATTTTAGTTCTTT---TACGAAACGTGTAAAcggGTTAatacgTTAACGaAAATATGCAAAAATAAGGAA 18621081
+                                    8899************9...99999***9999999999999988899899***99************9999986 PP
+
+>> KZ289390.1  Brassica napus cultivar ZS11 unplaced genomic scaffold scaffold1919, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   85.5  12.8   7.7e-22       234       355 ..     93687     93566 ..     93708     93545 ..    113133    0.76
+
+  Alignment:
+  score: 85.5 bits
+  PIN3_homologs_from_BLAST   234 tcttAttAga...tAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtcgtcAtggtccccatttttatggga 311  
+                                  ct A  Aga   tAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtc tcAtggtcccc+ttt tatggga
+                KZ289390.1 93687 ACTGAGGAGAtggTAAATGGTAATGGTGGACGACATGGTCTCGTGTTGTTGATAGTCCTCATGGTCCCCCTTTATATGGGA 93607
+                                 556666665522279****************************************************************** PP
+
+  PIN3_homologs_from_BLAST   312 gtttgattggattttttttttacaattttatatatAtaaaAttt 355  
+                                 g t+ attggatttt+tt  +a  at+t ata+atAt a Attt
+                KZ289390.1 93606 GGTG-ATTGGATTTTCTTAAAAATATAT-ATACATAT-ATATTT 93566
+                                 ***9.********988877444333333.44444444.333332 PP
+
+>> KZ289390.1  Brassica napus cultivar ZS11 unplaced genomic scaffold scaffold1919, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   81.3  36.4   1.5e-20         1       196 [.     93991     93793 ..     93991     93773 ..    113133    0.87
+
+  Alignment:
+  score: 81.3 bits
+  PIN3_homologs_from_BLAST     1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa................ 63   
+                                 cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa                
+                KZ289390.1 93991 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattatatcctag 93912
+                                 7899999999999*************999997.7789999************************99*************** PP
+
+  PIN3_homologs_from_BLAST    64 ....ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAattatgttagtta 136  
+                                     ttcctta ttttgcatattttcgtt acatAttaAcccgtttacA+g    +tAaaaga +taAa+t t  tagt++
+                KZ289390.1 93911 gacaTTCCTTATTTTTGCATATTTTCGTTAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAAAATTT--TAGTCC 93833
+                                 *********************************************************************9985..****** PP
+
+  PIN3_homologs_from_BLAST   137 AtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggg 196  
+                                 At AAAtttAtatga             gt gaaat aAaa t     a a aaatt gg
+                KZ289390.1 93832 AT-AAATTTATATGA-------------GTTGAAATAAAAAAT-----ACA-AAATTTGG 93793
+                                 **.***********9.............444566666655533.....222.23333333 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   67.9  25.4   1.7e-16       105       412 ..  13315841  13316107 ..  13315820  13316108 ..  68396429    0.84
+
+  Alignment:
+  score: 67.9 bits
+  PIN3_homologs_from_BLAST      105 tacAtg.atAaaagaAttaAattatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaat 178     
+                                    ta A + atA a g At  A  t t     ttaA+aAAAt++A                        at+a +++
+                CM002770.2 13315841 TATAAAtATATATGTATATATATTT-----TTAAGAAAATCCA------------------------ATCACCTC 13315886
+                                    4444445666666777666666664.....8899999999999........................9999999* PP
+
+  PIN3_homologs_from_BLAST      179 tcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgat 244     
+                                    +ca Ataaa+     ggggA+     ggAc Atc  + A+ +g g c+Atg++gt     +c    ttA+ A +t
+                CM002770.2 13315887 CCATATAAAG-----GGGGACcatgaGGACTATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTT 13315951
+                                    **********.....****************************************.....77888********** PP
+
+  PIN3_homologs_from_BLAST      245 AaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc....ccatttttatggga 311     
+                                    A +t  t        AcgAcA    ctc + ++ ttg  ++a++ gtc  Atggtcc    c a tttt      
+                CM002770.2 13315952 ATCTAAT--------ACGACA----CTCACACCATTGccCCACCTGTCggATGGTCCatccCTAATTTT------ 13316008
+                                    *******........******....************9999*************998775455555555...... PP
+
+  PIN3_homologs_from_BLAST      312 gtttgattggattttttttttacaattttatatatAta.....aaAttttatttatttatctactaAttgtttgA 381     
+                                      tt att  a  t  t t          a at+tAt+     aaAtttta+ t ttt   tac+aA +gt+t A
+                CM002770.2 13316009 --TT-ATTTCAACTCATAT----------AAATTTATGgactaAAATTTTAGGTCTTT---TACGAAACGTGTAA 13316067
+                                    ..45.66666666633333..........88888888888888999*********999...89999999999999 PP
+
+  PIN3_homologs_from_BLAST      382 a...attA.....ttAAct.atAtgtgaaaaaatcgtgaa 412     
+                                    a   +ttA     ttAAc+ a At tg+aaaaat  +gaa
+                CM002770.2 13316068 AcggGTTAatatgTTAACGaAAATATGCAAAAATAAGGAA 13316107
+                                    9999999988888999***9*************9999886 PP
+
+>> CM002764.2  Brassica napus cultivar ZS11 chromosome A6, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   45.3   9.6   1.2e-09       196       352 ..  27164523  27164362 ..  27164543  27164340 ..  36080978    0.77
+
+  Alignment:
+  score: 45.3 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt g
+                CM002764.2 27164523 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCGTATTATAGAACTGGTCGTTGTGGAaAGACATAG 27164450
+                                    689****************95667799**988663.66678****************99999999637*****99 PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM002764.2 27164449 -CTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 27164377
+                                    .9*****8761567*******************98777533789999999.999998776311122233333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaaaA 352     
+                                    tt a  t tAt+a A
+                CM002764.2 27164376 TTGACGTGTATGATA 27164362
+                                    333555555555444 PP
+
+>> CM002762.2  Brassica napus cultivar ZS11 chromosome A4, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   45.2   8.8   1.3e-09       196       350 ..  19309396  19309555 ..  19309376  19309579 ..  23556786    0.78
+
+  Alignment:
+  score: 45.2 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt g
+                CM002762.2 19309396 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCGTATTATAGAACTGGTCGTTGTGGAaAGACATAG 19309469
+                                    689****************95667799**988663.66678****************99999999637*****99 PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM002762.2 19309470 -CTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 19309542
+                                    .9*****8761567*******************98777533789999999.999998776311122223333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaa 350     
+                                    tt a  t tAt+a
+                CM002762.2 19309543 TTGACGTGTATGA 19309555
+                                    3335555555544 PP
+
+>> CM002762.2  Brassica napus cultivar ZS11 chromosome A4, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   43.1   9.0   5.6e-09       196       352 ..  19301655  19301816 ..  19301635  19301838 ..  23556786    0.77
+
+  Alignment:
+  score: 43.1 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt  
+                CM002762.2 19301655 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCGTATTATAGAACTGGTCGTTGTGGAaAGACATA- 19301727
+                                    689****************95667799**988663.66678****************99999999637****75. PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM002762.2 19301728 CCTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 19301801
+                                    6******8761567*******************98777533789999999.999998776311122233333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaaaA 352     
+                                    tt a  t tAt+a A
+                CM002762.2 19301802 TTGACGTGTATGATA 19301816
+                                    333555555555444 PP
+
+>> CM002775.2  Brassica napus cultivar ZS11 chromosome C7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   42.3   8.2     1e-08       196       350 ..  21426788  21426947 ..  21426768  21426970 ..  62442587    0.77
+
+  Alignment:
+  score: 42.3 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt  
+                CM002775.2 21426788 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCATATTATAGAACTGGTCGTTGTGGAaAGACATA- 21426860
+                                    689****************95667799**988663.666789***************99999999637****75. PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM002775.2 21426861 CCTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 21426934
+                                    6******8761567*******************98777533789999999.999998776311122233333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaa 350     
+                                    tt a  t tAt+a
+                CM002775.2 21426935 TTGACGTGTATGA 21426947
+                                    3335555555544 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   35.9  28.7   8.5e-07       183       410 ..  22082050  22081785 ..  22082072  22081782 ..  68396429    0.71
+
+  Alignment:
+  score: 35.9 bits
+  PIN3_homologs_from_BLAST      183 AtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaat 248     
+                                    A aaaaaaa  ggggA+      gAccAtc  + A+ +g g c+Atg++gt     +c    ttA+ A  tA +t
+                CM002770.2 22082050 AAAAAAAAAACGGGGACcatgaCGACCATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTTATCT 22081981
+                                    23333344666*****9999888****************************.....77778************** PP
+
+  PIN3_homologs_from_BLAST      249 ggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtc....cccatttttatgggagttt 315     
+                                      taat     A g cA     tc + ++ ttg  ++a++ gtc  Atggtc    ccca t tt       ttt
+                CM002770.2 22081980 ATTAATT----AAGGCA----TTCACACCATTGccCCACCTGTCggATGGTCaataCCCAATGTT-------TTT 22081921
+                                    ****997....555599....7***********9999**************86666566555544.......466 PP
+
+  PIN3_homologs_from_BLAST      316 gattggattttttttttacaattttatatatAta....................aaAttttatttatttatctac 370     
+                                     at+  atttt  ttt     + t a at+t t                     aaAttt+atttatt a   ac
+                CM002770.2 22081920 AATCTAATTTTAATTT----TCATAAAATTTCTTcaacatgacaaaaccactttAAATTTAATTTATTAACTAAC 22081850
+                                    6777777666322211....1111222222222233333335556666666677999999999999999777777 PP
+
+  PIN3_homologs_from_BLAST      371 taAttgtttgAaattA........................ttAAct.atAtgtgaaaaaatcgtg 410     
+                                    taAtt  tt A   tA                        t AAc+ a At tg+aaaa t  +g
+                CM002770.2 22081849 TAATTTATTTATTCTAttgtgtaataaacgggttgatatgTCAACGaAAATATGCAAAATTAAGG 22081785
+                                    77766544444322335556666666666666666666667788888888888888877776666 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   31.2  20.6   2.3e-05       339       413 .]  13314721  13314650 ..  13314743  13314650 ..  68396429    0.85
+
+  Alignment:
+  score: 31.2 bits
+  PIN3_homologs_from_BLAST      339 ttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413     
+                                     +a a atAt a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tAtgtgaaaaaatcgtgaag
+                CM002770.2 13314721 ACAAAAATAT-ATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTATGTGAAAAAATCGTGAAG 13314650
+                                    2367788888.99************************..*********************************986 PP
+
+>> KZ289390.1  Brassica napus cultivar ZS11 unplaced genomic scaffold scaffold1919, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   31.2  20.6   2.3e-05       339       413 .]     92371     92300 ..     92393     92300 ..    113133    0.85
+
+  Alignment:
+  score: 31.2 bits
+  PIN3_homologs_from_BLAST   339 ttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413  
+                                  +a a atAt a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tAtgtgaaaaaatcgtgaag
+                KZ289390.1 92371 ACAAAAATAT-ATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTATGTGAAAAAATCGTGAAG 92300
+                                 2367788888.99************************..*********************************986 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   29.1  16.7    0.0001       288       412 ..  22082415  22082520 ..  22082411  22082521 ..  68396429    0.76
+
+  Alignment:
+  score: 29.1 bits
+  PIN3_homologs_from_BLAST      288 gtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttatttat 362     
+                                      cAtggtccc +tttttatgggagtt  attg attt               atata+At    t t a  tat
+                CM002770.2 22082415 ACCATGGTCCC-GTTTTTATGGGAGTTA-ATTGTATTT---------------ATATAGAT-TTCTATGACATAT 22082471
+                                    568*****986.677999********99.********9...............55555555.2222233445566 PP
+
+  PIN3_homologs_from_BLAST      363 ttatctactaAttgtttgAaattAttAActatAtgtgaaaa.aatcgtgaa 412     
+                                    ttat  +ct+Att  ttgAaattAt+AAct+tAtgt aaaa a tcgtgaa
+                CM002770.2 22082472 TTATTACCTGATT--TTGAAATTATAAACTGTATGTTAAAAgATTCGTGAA 22082520
+                                    666666*******..********************8766532667887776 PP
+
+>> KZ289390.1  Brassica napus cultivar ZS11 unplaced genomic scaffold scaffold1919, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   22.7  11.4    0.0088       102       244 ..     93560     93673 ..     93539     93678 ..    113133    0.79
+
+  Alignment:
+  score: 22.7 bits
+  PIN3_homologs_from_BLAST   102 gtttacAtg.atAaaagaAttaAattatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattca 181  
+                                 g tta+A + atA a g At  A  t t     ttaA+aAAAt++A                        at+a ++++ca
+                KZ289390.1 93560 GATTATAAAtATATATGTATATATATTT-----TTAAGAAAATCCA------------------------ATCACCTCCCA 93611
+                                 3345555445677777777777777665.....8899999999999........................9999999**** PP
+
+  PIN3_homologs_from_BLAST   182 gAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgat 244  
+                                  Ataaa+     ggggA+     ggAc+Atc  + A+ +g g c+Atg++gt     +c    ttA+ A +t
+                KZ289390.1 93612 TATAAAG-----GGGGACcatgaGGACTATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTT 93673
+                                 *******.....****************************************.....666667777777665 PP
+
+>> CM002770.2  Brassica napus cultivar ZS11 chromosome C2, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   19.0  21.4      0.12         1       101 [.  13314650  13314735 ..  13314646  13314745 ..  68396429    0.89
+
+  Alignment:
+  score: 19.0 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaat 72      
+                                    cttc +     g ttt ttc   +ata+agttt ta tttcaaA  +a+t   taaa+  attaaa         
+                CM002770.2 13314650 CTTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA--------- 13314708
+                                    344444.....999999999..99**************************99999999********......... PP
+
+  PIN3_homologs_from_BLAST       73 tttgcatattttcgttgacatAttaAccc 101     
+                                      t  atatttt+gt++a a+A taA c 
+                CM002770.2 13314709 --TATATATTTTTGTGCATACAATAAACT 13314735
+                                    ..9*******************9998775 PP
+
+>> KZ289390.1  Brassica napus cultivar ZS11 unplaced genomic scaffold scaffold1919, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   19.0  21.4      0.12         1       101 [.     92300     92385 ..     92296     92395 ..    113133    0.89
+
+  Alignment:
+  score: 19.0 bits
+  PIN3_homologs_from_BLAST     1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaattttgca 78   
+                                 cttc +     g ttt ttc   +ata+agttt ta tttcaaA  +a+t   taaa+  attaaa           t  a
+                KZ289390.1 92300 CTTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA-----------TATA 92362
+                                 344444.....999999999..99**************************99999999********...........9*** PP
+
+  PIN3_homologs_from_BLAST    79 tattttcgttgacatAttaAccc 101  
+                                 tatttt+gt++a a+A taA c 
+                KZ289390.1 92363 TATTTTTGTGCATACAATAAACT 92385
+                                 ****************9998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       1468  (1951608480 residues searched)
+Residues passing SSV filter:      1140289377  (0.584); expected (0.02)
+Residues passing bias filter:      664990859  (0.341); expected (0.02)
+Residues passing Vit filter:       140327414  (0.0719); expected (0.003)
+Residues passing Fwd filter:        26971399  (0.0138); expected (3e-05)
+Total number of hits:                     19  (2.1e-06)
+# CPU time: 2989.79u 5.95s 00:49:55.74 Elapsed: 00:25:16.40
+# Mc/sec: 531.53
+//
+[ok]

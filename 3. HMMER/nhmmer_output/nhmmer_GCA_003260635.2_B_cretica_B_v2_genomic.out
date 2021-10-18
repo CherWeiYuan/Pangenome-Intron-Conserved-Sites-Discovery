@@ -1,0 +1,328 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_003260635.2_B_cretica_B_v2_genomic.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start      end  Description
+    ------- ------ -----  --------          -----    -----  -----------
+    5.7e-78  268.3  24.7  QGKW02000717.1  8192452  8193091 Brassica cretica isolate PFS-001/15 scf_15850_7121, whole 
+    1.1e-72  250.9  34.1  QGKW02000276.1 12176857 12176510 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+    3.7e-72  249.1  36.4  QGKW02000276.1 12174793 12174448 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+    1.2e-18   72.7  27.5  QGKW02000276.1 12174438 12174709 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+    6.4e-16   63.8  26.3  QGKW02000276.1 12176492 12176773 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+    1.2e-07   36.6  25.6  QGKW02000717.1  8192786  8192521 Brassica cretica isolate PFS-001/15 scf_15850_7121, whole 
+    7.2e-07   34.0  20.3  QGKW02000276.1 12175402 12175313 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+    1.2e-06   33.2  21.3  QGKW02000276.1 12173335 12173250 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+      7e-06   30.7  17.4  QGKW02000717.1  8193239  8193344 Brassica cretica isolate PFS-001/15 scf_15850_7121, whole 
+  ------ inclusion threshold ------
+        0.7   14.2  21.8  QGKW02000276.1 12175313 12175399 Brassica cretica isolate PFS-001/15 scf_15850_2698, whole 
+
+
+Annotation for each hit  (and alignments):
+>> QGKW02000717.1  Brassica cretica isolate PFS-001/15 scf_15850_7121, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  268.3  24.7   5.7e-78         3       410 ..   8192452   8193091 ..   8192448   8193094 ..  25926961    0.96
+
+  Alignment:
+  score: 268.3 bits
+  PIN3_homologs_from_BLAST       3 tcgtactctgttttattcctttataaagtttttagtttcaaA........gctatttaaaaggattaaattccttaa 71     
+                                   tc  actctgtttt+ttccttt++aaagt+ t+ag ttca A        gcta tta   gga  aaa+tccttaa
+            QGKW02000717.1 8192452 TCTGACTCTGTTTTGTTCCTTTTGAAAGTCATCAGATTCAGAccatacgtGCTACTTAGTCGGA--AAAGTCCTTAA 8192526
+                                   567799************************************9999999999***999998885..8889******* PP
+
+  PIN3_homologs_from_BLAST      72 ttttgcatattttcgttgacatAttaAcccgt...ttacAtgatAaaagaAttaAattatgttagttaAtaAAAttt 145    
+                                   ttttgcatattttcgttgacatAt+aAcccgt   ttacA++at +aa aA+taAatta gttagttaAt AAAtt 
+            QGKW02000717.1 8192527 TTTTGCATATTTTCGTTGACATATCAACCCGTttaTTACACAATGGAATAAATAAATTA-GTTAGTTAAT-AAATTA 8192601
+                                   ********************************888899******************999.9*********.888888 PP
+
+  PIN3_homologs_from_BLAST     146 A.tatga...tgttttgtcat.ttg...........tggaaattaAaattcagAtaaaaaa.attggggAtggAccA 205    
+                                   A t t a   +gttttgtcat ttg           tg aaattaAaatt agAt+aaaaa attggg At gAccA
+            QGKW02000717.1 8192602 AaTTTAAagtGGTTTTGTCATgTTGaagaaattttaTGAAAATTAAAATT-AGATTAAAAAcATTGGGTATTGACCA 8192677
+                                   87776666779**********9999***********************99.99999999999*************** PP
+
+  PIN3_homologs_from_BLAST     206 tccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttg 278    
+                                   tccgacA+gtggggcaAtggtgtga tg+c    ttA tAgatAaatggtaatggtggAcgAcAtggtctcgtgttg
+            QGKW02000717.1 8192678 TCCGACAGGTGGGGCAATGGTGTGAATGCCttaaTTAATAGATAAATGGTAATGGTGGACGACATGGTCTCGTGTTG 8192754
+                                   ******************************88888899*************************************** PP
+
+  PIN3_homologs_from_BLAST     279 ttgatagtcgtcAtggtccccattttt.................................................. 305    
+                                   ttgat gtcgtcAtggtcccc +tttt                                                  
+            QGKW02000717.1 8192755 TTGATGGTCGTCATGGTCCCCGCTTTTttttttttttttnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn 8192831
+                                   **********************999989999********************************************** PP
+
+  PIN3_homologs_from_BLAST     306 ............................................................................. 305    
+                                                                                                                
+            QGKW02000717.1 8192832 nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnntttttttttttttttg 8192908
+                                   ***************************************************************************** PP
+
+  PIN3_homologs_from_BLAST     306 .........................atgggagtttgattggattttttttttacaattttatatatAtaaaAtttta 357    
+                                                            a+g  +gtttg tt  a + +t+t+++ac+a++ttat ++tAt aaA ++++
+            QGKW02000717.1 8192909 ataaattgtaaataccataacttgaACGAAGGTTTGGTTACAACAATGTCGAACCAGATTATGCTTAT-AAAGCCAG 8192984
+                                   ********************************************************************.******** PP
+
+  PIN3_homologs_from_BLAST     358 tttattt........................atctactaAttgtttgAaattA........................ 386    
+                                   t+t+tt+                        a c+++taA    ++gA attA                        
+            QGKW02000717.1 8192985 TCTGTTCttaagggccgcaaaaaagttaaaaACCCCATAAGAAACCGAGATTAagcctaagacaaaccggtaatgga 8193061
+                                   ****************************9999999999***99********************************** PP
+
+  PIN3_homologs_from_BLAST     387 ......ttAActatAtgtgaaaaaatcgtg 410    
+                                         t+AAct +At+ gaaaaa+ c   
+            QGKW02000717.1 8193062 aaacctTAAACTTAATAGGAAAAAGACCAA 8193091
+                                   ***999999*************99988765 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  250.9  34.1   1.1e-72         1       353 [.  12176857  12176510 ..  12176857  12176489 ..  16786893    0.91
+
+  Alignment:
+  score: 250.9 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+            QGKW02000276.1 12176857 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 12176784
+                                    78999**999999**************99997.7789999************************9********** PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAa 124     
+                                              ttcctta ttttgcatattttcgtt acatAttaAcccgtttacA+g     tAaaag A++ A 
+            QGKW02000276.1 12176783 tcctaggacaTTCCTTATTTTTGCATATTTTCGTTAACATATTAACCCGTTTACACGtttcGTAAAAGGACCTAT 12176709
+                                    *********************************************************99999********99987 PP
+
+  PIN3_homologs_from_BLAST      125 ttatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt 199     
+                                    +    ttagt++At AAAtttAtatga+                         tt a+Ataaaaaaatt gggAt
+            QGKW02000276.1 12176708 AAT-TTTAGTCCAT-AAATTTATATGAG-------------------------TTGAAATAAAAAAATTAGGGAT 12176661
+                                    765.579*******.********99983.........................3347778889999********* PP
+
+  PIN3_homologs_from_BLAST      200 ggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgt 274     
+                                    ggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcA ggtctcgt
+            QGKW02000276.1 12176660 GGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACACGGTCTCGT 12176586
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      275 gttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAta 349     
+                                    gttgttgatagtc tcAtggtcccc+ttt tatgggagtt+ attggatttt+tt  +a  at+t ata+atAt 
+            QGKW02000276.1 12176585 GTTGTTGATAGTCCTCATGGTCCCCCTTTGTATGGGAGTTG-ATTGGATTTTCTTAAAAATATAT-ATACATAT- 12176514
+                                    ****************************************9.********988877444333332.44444444. PP
+
+  PIN3_homologs_from_BLAST      350 aaAt 353     
+                                    a At
+            QGKW02000276.1 12176513 ATAT 12176510
+                                    3333 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  249.1  36.4   3.7e-72         1       353 [.  12174793  12174448 ..  12174793  12174427 ..  16786893    0.90
+
+  Alignment:
+  score: 249.1 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+            QGKW02000276.1 12174793 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 12174720
+                                    789999*999999**************99997.7789999************************9********** PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAa 124     
+                                              ttcctta ttttgcatattttcgtt acatAttaAcccgtttacA+g     tAaaaga +taAa
+            QGKW02000276.1 12174719 tcctaggacaTTCCTTATTTTTGCATATTTTCGTTAACATATTAACCCGTTTACACGtttcGTAAAAGACCTAAA 12174645
+                                    **********************************************************999************** PP
+
+  PIN3_homologs_from_BLAST      125 ttatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt 199     
+                                    +t t  tagt++At AAAtttAtatga+                            + A  aaaaaatt gggAt
+            QGKW02000276.1 12174644 ATTT--TAGTCCAT-AAATTTATATGAGT--------------------------TGAAATAAAAAATTAGGGAT 12174599
+                                    9985..********.********999832..........................24455567778999****** PP
+
+  PIN3_homologs_from_BLAST      200 ggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgt 274     
+                                    ggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcgt
+            QGKW02000276.1 12174598 GGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCGT 12174524
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      275 gttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAta 349     
+                                    gttgttgatagtc tcA ggtcccc+ttt tatgggagtt+ att gatttt+tt  +a  at+t ata+atAt 
+            QGKW02000276.1 12174523 GTTGTTGATAGTCCTCACGGTCCCCCTTTATATGGGAGTTG-ATTAGATTTTCTTAAAAATATAT-ATACATAT- 12174452
+                                    ****************************************9.********988777444333332.34444444. PP
+
+  PIN3_homologs_from_BLAST      350 aaAt 353     
+                                    a At
+            QGKW02000276.1 12174451 ATAT 12174448
+                                    3333 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   72.7  27.5   1.2e-18       100       412 ..  12174438  12174709 ..  12174416  12174710 ..  16786893    0.84
+
+  Alignment:
+  score: 72.7 bits
+  PIN3_homologs_from_BLAST      100 ccgtttacAtg.atAaaagaAttaAattatgttagttaAtaAAAtttAtatgatgttttgtcatttgtggaaatt 173     
+                                     +g tta A + atA a g At  A  t t     ttaA+aAAAt+tA                        at+
+            QGKW02000276.1 12174438 TGGATTATAAAtATATATGTATATATATTT-----TTAAGAAAATCTA------------------------ATC 12174483
+                                    444455555556777777777777777765.....899999******9........................*** PP
+
+  PIN3_homologs_from_BLAST      174 aAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAt 239     
+                                    aA++++ca Ataaa+     ggggA+     ggAc Atc  + A+ +g g c+Atg++gt     +c    ttA+
+            QGKW02000276.1 12174484 AACTCCCATATAAAG-----GGGGACcgtgaGGACTATCAACAACACGAGACCATGTCGT-----CCaccaTTAC 12174548
+                                    ***************.....****************************************.....77778***** PP
+
+  PIN3_homologs_from_BLAST      240 tAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc....ccattttta 306     
+                                     A  tA +t  t        AcgAcA    ctc + ++ ttg  ++a++ gtc  Atggtcc    c a tttt 
+            QGKW02000276.1 12174549 CATTTATCTAAT--------ACGACA----CTCACACCATTGccCCACCTGTCggATGGTCCatccCTAATTTT- 12174610
+                                    ************........******....************9999*************998775355555554. PP
+
+  PIN3_homologs_from_BLAST      307 tgggagtttgattggattttttttttacaattttatatatAta.....aaAttttatttatttatctactaAttg 376     
+                                           tt att  a  t  t t          a at+tAt+     aaAtttta+ t ttt   tac+aA +g
+            QGKW02000276.1 12174611 -------TT-ATTTCAACTCATAT----------AAATTTATGgactaAAATTTTAGGTCTTT---TACGAAACG 12174664
+                                    .......45.66666666633333..........88888888888888999*********999...899999999 PP
+
+  PIN3_homologs_from_BLAST      377 tttgAa...attA.....ttAAct.atAtgtgaaaaaatcgtgaa 412     
+                                    t+t Aa   +ttA     ttAAc+ a At tg+aaaaat  +gaa
+            QGKW02000276.1 12174665 TGTAAAcggGTTAatatgTTAACGaAAATATGCAAAAATAAGGAA 12174709
+                                    999999999999988888999***9*************9999886 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   63.8  26.3   6.4e-16        92       412 ..  12176492  12176773 ..  12176468  12176774 ..  16786893    0.81
+
+  Alignment:
+  score: 63.8 bits
+  PIN3_homologs_from_BLAST       92 atAttaAcccgtttacAtg.atAaaagaAttaAattatgttagttaAtaAAAtttAtatgatgttttgtcatttg 165     
+                                    atAt  A ++g tta A + atA a g At  A  t t     ttaA+aAAAt++A                   
+            QGKW02000276.1 12176492 ATATACAAGGGATTATAAAtATATATGTATATATATTT-----TTAAGAAAATCCA------------------- 12176542
+                                    44444555555566666666777778888877777765.....899*********9................... PP
+
+  PIN3_homologs_from_BLAST      166 tggaaattaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc 235     
+                                         at+aA++++ca A aaa+     ggggA+     ggAc Atc  + A+ +g g c+ tg++gt     +c
+            QGKW02000276.1 12176543 -----ATCAACTCCCATACAAAG-----GGGGACcatgaGGACTATCAACAACACGAGACCGTGTCGT-----CC 12176602
+                                    .....******************.....****************************************.....77 PP
+
+  PIN3_homologs_from_BLAST      236 ....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc....c 298     
+                                        ttA+ A +tA +t  t        AcgAcA    ctc + ++ ttg  ++a++ gtc  Atggtcc    c
+            QGKW02000276.1 12176603 accaTTACCATTTATCTAAT--------ACGACA----CTCACACCATTGccCCACCTGTCggATGGTCCatccC 12176665
+                                    778*****************........******....************9999*************99877545 PP
+
+  PIN3_homologs_from_BLAST      299 catttttatgggagtttgattggattttttttttacaattttatatatAta.....aaAttttatttatttatct 368     
+                                     a tttt       ttt att  a  t  t t          a at+tAt+     aaAtt ta+ t  t  t t
+            QGKW02000276.1 12176666 TAATTTT-------TTT-ATTTCAACTCATAT----------AAATTTATGgactaAAATTATAGGTCCT--TTT 12176720
+                                    5666665.......344.66666666533333..........7788888866666555555554444333..347 PP
+
+  PIN3_homologs_from_BLAST      369 actaAttgtttgAa...attA.....ttAAct.atAtgtgaaaaaatcgtgaa 412     
+                                    ac+aA +gt+t Aa   +ttA     ttAAc+ a At tg+aaaaat  +gaa
+            QGKW02000276.1 12176721 ACGAAACGTGTAAAcggGTTAatatgTTAACGaAAATATGCAAAAATAAGGAA 12176773
+                                    99999999999998988899888888999***9*************9999886 PP
+
+>> QGKW02000717.1  Brassica cretica isolate PFS-001/15 scf_15850_7121, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   36.6  25.6   1.2e-07       183       410 ..   8192786   8192521 ..   8192797   8192518 ..  25926961    0.70
+
+  Alignment:
+  score: 36.6 bits
+  PIN3_homologs_from_BLAST     183 AtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatgg 250    
+                                   A aaaaaaa  ggggA+      gAccAtc  + A+ +g g c+Atg++gt     +c    ttA+ A +tA +t  
+            QGKW02000717.1 8192786 AAAAAAAAAGCGGGGACcatgaCGACCATCAACAACACGAGACCATGTCGT-----CCaccaTTACCATTTATCTAT 8192715
+                                   34445555888*****9999888****************************.....77888**************** PP
+
+  PIN3_homologs_from_BLAST     251 taatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtc....cccatttttatgggagtttgatt 319    
+                                   taat     A g cA     tc + ++ ttg  ++a+++gtc  Atggtc    ccca t tt       ttt at+
+            QGKW02000717.1 8192714 TAATT----AAGGCA----TTCACACCATTGccCCACCTGTCggATGGTCaataCCCAATGTT-------TTTAATC 8192653
+                                   ***97....555599....7***********9999**************86666566555444.......4666777 PP
+
+  PIN3_homologs_from_BLAST     320 ggattttttttttacaattttatatatAta....................aaAttttatttatttatctactaAttg 376    
+                                     atttt  tt      + t a at+t t                     aaAttt+atttatt a   actaAtt 
+            QGKW02000717.1 8192652 TAATTTTAATT----TTCATAAAATTTCTTcaacatgacaaaaccactttAAATTTAATTTATTAACTAACTAATTT 8192580
+                                   77766632222....11122222222222233444446666666677777999999999999999666666666664 PP
+
+  PIN3_homologs_from_BLAST     377 tttgAaattA.............................ttAAct.atAtgtgaaaaaatcgtg 410    
+                                    tt      A                             t AAc+ a At tg+aaaa t  +g
+            QGKW02000717.1 8192579 ATTT-----AttccattgtgtaataaacgggttgatatgTCAACGaAAATATGCAAAATTAAGG 8192521
+                                   3332.....2333334445555555566666666666667778887788888888877766665 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   34.0  20.3   7.2e-07       321       413 .]  12175402  12175313 ..  12175415  12175313 ..  16786893    0.82
+
+  Alignment:
+  score: 34.0 bits
+  PIN3_homologs_from_BLAST      321 gattttttttttacaattttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatA 395     
+                                    ++t  ttt tt     + + a a atAt a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tA
+            QGKW02000276.1 12175402 CCTAGTTTATTGTATGCACAAAAAATAT-ATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTA 12175331
+                                    4444444444444555667799999999.99************************..****************** PP
+
+  PIN3_homologs_from_BLAST      396 tgtgaaaaaatcgtgaag 413     
+                                    tgtgaaaaaatcgtgaag
+            QGKW02000276.1 12175330 TGTGAAAAAATCGTGAAG 12175313
+                                    ***************986 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   33.2  21.3   1.2e-06       325       413 .]  12173335  12173250 ..  12173352  12173250 ..  16786893    0.82
+
+  Alignment:
+  score: 33.2 bits
+  PIN3_homologs_from_BLAST      325 ttttttttacaattttatatatAtaaaAttttatttatttatctactaAttgtttgAaattAttAActatAtgtg 399     
+                                     ttt tt     + + a a atAt a Attt+atttatttatc+act+Att  ttgAaattAt+AAct+tAtgtg
+            QGKW02000276.1 12173335 GTTTATTGTATGCACAAAAAATAT-ATATTTAATTTATTTATCGACTGATT--TTGAAATTATAAACTGTATGTG 12173264
+                                    444444444555667799999999.99************************..********************** PP
+
+  PIN3_homologs_from_BLAST      400 aaaaaatcgtgaag 413     
+                                    aaaaaatcgtgaag
+            QGKW02000276.1 12173263 AAAAAATCGTGAAG 12173250
+                                    ***********986 PP
+
+>> QGKW02000717.1  Brassica cretica isolate PFS-001/15 scf_15850_7121, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   30.7  17.4     7e-06       288       412 ..   8193239   8193344 ..   8193235   8193345 ..  25926961    0.76
+
+  Alignment:
+  score: 30.7 bits
+  PIN3_homologs_from_BLAST     288 gtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttatttattt 364    
+                                     cAtggtccc +tttttatgggagtt  attg attt               atata+At    t t a  tattt
+            QGKW02000717.1 8193239 ACCATGGTCCC-GTTTTTATGGGAGTTA-ATTGTATTT---------------ATATAGAT-TTCTATGACATATTT 8193297
+                                   568*****986.677999********99.********9...............55555555.222223344556666 PP
+
+  PIN3_homologs_from_BLAST     365 atctactaAttgtttgAaattAttAActatAtgtgaaaaaa.tcgtgaa 412    
+                                   at  +ct+Att  ttgAaattAt+AAct+tAtgt aaaaaa tcgtgaa
+            QGKW02000717.1 8193298 ATTACCTGATT--TTGAAATTATAAACTGTATGTTAAAAAAtTCGTGAA 8193344
+                                   6666*******..********************9877765416777776 PP
+
+>> QGKW02000276.1  Brassica cretica isolate PFS-001/15 scf_15850_2698, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ?   14.2  21.8       0.7         1       101 [.  12175313  12175399 ..  12175309  12175410 ..  16786893    0.83
+
+  Alignment:
+  score: 14.2 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaat 72      
+                                    cttc +     g ttt ttc   +ata+agttt ta tttcaaA  +a+t   taaa+  attaaa         
+            QGKW02000276.1 12175313 CTTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA--------- 12175371
+                                    344444.....999999999..99*************************99999999999999999......... PP
+
+  PIN3_homologs_from_BLAST       73 tttgcatatt.ttcgttgacatAttaAccc 101     
+                                      t  atatt tt+gt++a a+A taA c 
+            QGKW02000276.1 12175372 --TATATATTtTTTGTGCATACAATAAACT 12175399
+                                    ..777776541678********99998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       2393  (416546364 residues searched)
+Residues passing SSV filter:       267074932  (0.641); expected (0.02)
+Residues passing bias filter:      151844741  (0.365); expected (0.02)
+Residues passing Vit filter:        32013847  (0.0769); expected (0.003)
+Residues passing Fwd filter:         5553780  (0.0133); expected (3e-05)
+Total number of hits:                     10  (6.06e-06)
+# CPU time: 614.35u 1.73s 00:10:16.08 Elapsed: 00:05:09.26
+# Mc/sec: 556.26
+//
+[ok]

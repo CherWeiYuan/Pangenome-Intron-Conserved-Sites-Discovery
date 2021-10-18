@@ -1,0 +1,28 @@
+Description,Max Score,Total Score,Query Cover,E value,Per. ident,Accession  ,,,Methods
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR782542.1,,,PIN3 intron of A. thaliana MEGABLAST against plants (taxid 3193)
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR699745.2,,,MEGABLAST hits are very well-aligned sequences
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR699765.1,,,"Hence, the output of MEGABLAST are short sequences"
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR699760.1,,,I took the accession number of the MEGABLAST results and BLAST PIN3 intron against it (BLASTN; loose alignments allowed)
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR699755.1,,,This allows the full sequence related to PIN3 to be located
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR797807.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR797797.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",806,806,100%,0,100,LR797787.1,,,
+Arabidopsis thaliana chromosome 1 sequence,806,806,100%,0,100,CP002684.1,,,
+"Arabidopsis thaliana chromosome I BAC F15H11 genomic sequence, complete sequence",806,806,100%,0,100,AC008148.2,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",800,800,100%,0,99.77,LR699770.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",800,800,100%,0,99.77,LR699750.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",800,800,100%,0,99.77,LR215052.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",800,800,100%,0,99.77,LR797802.1,,,
+"Arabidopsis thaliana genome assembly, chromosome: 1",800,800,100%,0,99.77,LR797792.1,,,
+"Arabis alpina genome assembly, chromosome: 2",335,335,100%,2.00E-88,80.94,LT669789.1,,,
+"Brassica rapa genome, scaffold: A07",250,458,75%,6.00E-63,80.74,LR031574.1,,,
+"Brassica oleracea HDEM genome, scaffold: C6",209,209,32%,1.00E-50,93.01,LR031880.1,,,
+"Brassica rapa subsp. pekinensis cultivar Inbred line Chiifu"" clone KBrB057E05"," complete sequence""",202,202,31%,2.00E-48,92.81,AC189401.2,,
+"Brassica juncea pin1 gene, 5'UTR",202,202,31%,2.00E-48,92.81,AJ307884.1,,,
+"Raphanus sativus genome assembly, chromosome: 8",198,198,35%,2.00E-47,89.74,LR778317.1,,,
+"Brassica oleracea HDEM genome, scaffold: C2",182,182,62%,2.00E-42,79.26,LR031874.1,,,
+"Raphanus sativus genome assembly, chromosome: 3",176,176,31%,1.00E-40,89.86,LR778312.1,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+"		",,,,,,,,,

@@ -1,0 +1,212 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_000309985.3_field_mustard_Cultivar_Chiifu-401-42.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start      end  Description
+    ------- ------ -----  --------          -----    -----  -----------
+    2.4e-93  319.7  45.7  CM020894.1     25127776 25128170 Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole 
+    2.1e-88  303.4  53.8  CM020894.1     21868939 21868486 Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole 
+    1.4e-30  112.9  51.0  CM020894.1     21868487 21868855 Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole 
+    7.4e-10   44.6   9.6  CM020894.1     13096290 13096450 Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole 
+    5.7e-05   28.5  21.0  CM020894.1     25128092 25127825 Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole 
+
+
+Annotation for each hit  (and alignments):
+>> CM020894.1  Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  319.7  45.7   2.4e-93         1       413 []  25127776  25128170 ..  25127776  25128170 ..  28928902    0.97
+
+  Alignment:
+  score: 319.7 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaatttt 75      
+                                    cttc+tactctgttttattcctt a aaa            aaA      taaaagg t+aaattccttaatttt
+                CM020894.1 25127776 CTTCCTACTCTGTTTTATTCCTTAAAAAAA----------AAAAA----CTAAAAGGTTGAAATTCCTTAATTTT 25127836
+                                    799******************999988873..........23333....4899********************** PP
+
+  PIN3_homologs_from_BLAST       76 gcatattttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tat 149     
+                                    gcatattttcgttgacatAtt AcccgtttacA+gatAaaagaAttaAattatgttagt++AtaAAAtttA tat
+                CM020894.1 25127837 GCATATTTTCGTTGACATATTTACCCGTTTACACGATAAAAGAATTAAATTATGTTAGTCCATAAAATTTAtTAT 25127911
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      150 gatgttttgtcat.ttg...............tggaaattaAaattcagAtaaaaaaatt.ggggAtggAccAtc 207     
+                                    gatgttttgtcat ttg               tggaaattaAaa+t a Ataaaaa+ tt ggggAtggAccAtc
+                CM020894.1 25127912 GATGTTTTGTCATtTTGaagaaatattaaaagTGGAAATTAAAACTAAAATAAAAAGTTTgGGGGATGGACCATC 25127986
+                                    *************9999*****************************99999999999888899************ PP
+
+  PIN3_homologs_from_BLAST      208 cgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttga 282     
+                                    c acAtgtggggcaAtgg gtgag+gtcttAttA  tAaat gtaatggtggAcgAcAtggtctcgtgt+gtt a
+                CM020894.1 25127987 CAACATGTGGGGCAATGGAGTGAGCGTCTTATTA--TAAATTGTAATGGTGGACGACATGGTCTCGTGTCGTTAA 25128059
+                                    *********************************9..9************************************** PP
+
+  PIN3_homologs_from_BLAST      283 tagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAtttta 357     
+                                    tagtcgtcAtggtccccatttt atgggagtt+ attggattt               ata+a+At a Att +a
+                CM020894.1 25128060 TAGTCGTCATGGTCCCCATTTTAATGGGAGTTG-ATTGGATTT---------------ATAGAGAT-ATATTAAA 25128117
+                                    ********************************9.*********...............99999999.99****** PP
+
+  PIN3_homologs_from_BLAST      358 tttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413     
+                                    tttatttatc+actaAtt  ttgAaattAt+AAct+tAtgtgaaa aatcgtgaag
+                CM020894.1 25128118 TTTATTTATCGACTAATT--TTGAAATTATAAACTGTATGTGAAA-AATCGTGAAG 25128170
+                                    ******************..***********************98.999*999975 PP
+
+>> CM020894.1  Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  303.4  53.8   2.1e-88         1       413 []  21868939  21868486 ..  21868939  21868486 ..  28928902    0.94
+
+  Alignment:
+  score: 303.4 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactct..gttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.......... 63      
+                                    cttc+tactct  gttttattcctt+ t  a  tttt+ ttt aaAgctatttaaaa gattaaa          
+                CM020894.1 21868939 CTTCATACTCTctGTTTTATTCCTTCTTTTAA-TTTTGTTTTTAAAGCTATTTAAAATGATTAAAtcagattata 21868866
+                                    78999**999999**************99997.7789999************************99********* PP
+
+  PIN3_homologs_from_BLAST       64 ..........ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaagaAttaAa 124     
+                                              ttcctta ttttgcatattttcgtt ac tAttaAcccgtttacA+g     tAaaagaA+taAa
+                CM020894.1 21868865 tcctaggacaTTCCTTATTTTTGCATATTTTCGTTAACGTATTAACCCGTTTACACGtttcGTAAAAGAACTAAA 21868791
+                                    **********************************************************999************** PP
+
+  PIN3_homologs_from_BLAST      125 ttatgttagttaAtaAAAtttAtatgatgttttgtcatttg.tggaaattaAaattcagAtaaaaaaattggggA 198     
+                                    +t t  tagt+aAt AAAtttAtatga             g tg aa   aAaa t agAt aaaaaatt gggA
+                CM020894.1 21868790 ATTT--TAGTCAAT-AAATTTATATGA-------------GtTGAAATAAAAAAATTAGATTAAAAAATTAGGGA 21868732
+                                    *985..********.**********99.............43678888888889999****************** PP
+
+  PIN3_homologs_from_BLAST      199 tggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcg 273     
+                                    tggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaatggtaatggtggAcgAcAtggtctcg
+                CM020894.1 21868731 TGGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATGGTAATGGTGGACGACATGGTCTCG 21868657
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      274 tgttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaatttt.atatatA 347     
+                                    tgttgttgatagtc tcAtggtcccc+ttt t+tgggagtt+ attggatttt+tt  +a  at+t+ atat   
+                CM020894.1 21868656 TGTTGTTGATAGTCCTCATGGTCCCCCTTTATGTGGGAGTTG-ATTGGATTTTCTTAAAAATATATAcATAT--- 21868586
+                                    *****************************************9.*********98887655555444342222... PP
+
+  PIN3_homologs_from_BLAST      348 ta.....................................aaAttttatttatttatctactaAttgtttgAaatt 385     
+                                     a                                     a Attt+atttatttatc+act+Att  ttgAaatt
+                CM020894.1 21868585 -AtatatatatttataatttattgtatgcacaaaaaaatATATTTAATTTATTTATCGACTGATT--TTGAAATT 21868514
+                                    .122446677889999******************99999999***********************..******** PP
+
+  PIN3_homologs_from_BLAST      386 AttAActatAtgtgaaaaaatcgtgaag 413     
+                                    At+AAct+tAtgtgaaaaaatcgtgaag
+                CM020894.1 21868513 ATAAACTGTATGTGAAAAAATCGTGAAG 21868486
+                                    *************************986 PP
+
+>> CM020894.1  Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  112.9  51.0   1.4e-30         2       412 ..  21868487  21868855 ..  21868482  21868856 ..  28928902    0.91
+
+  Alignment:
+  score: 112.9 bits
+  PIN3_homologs_from_BLAST        2 ttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt...taaaaggattaaattccttaatt 73      
+                                    ttc +     g ttt ttc   +ata+agttt ta tttcaaA  +a+t   taaa+  attaaa          
+                CM020894.1 21868487 TTCAC-----GATTTTTTC--ACATACAGTTTATAATTTCAAAATCAGTcgaTAAATAAATTAAA---------- 21868544
+                                    44444.....999999999..999*************************9999************.......... PP
+
+  PIN3_homologs_from_BLAST       74 ttgcatattttcgttgacatAttaAcccgt..ttacAtg.atAaaagaAttaAattatgttagttaAtaAAAttt 145     
+                                     t  at tttt+gt++a a+A taA    t   ta At+ atA a g At  A tt       ttaA+aAAAt++
+                CM020894.1 21868545 -TATATTTTTTTGTGCATACAATAAATTATaaATATATAtATATATGTATATATTT-------TTAAGAAAATCC 21868611
+                                    .9*************************99966666666688888888888888877.......789********* PP
+
+  PIN3_homologs_from_BLAST      146 AtatgatgttttgtcatttgtggaaattaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgt 215     
+                                    A                        at+aA++++ca Ataaa+     ggggA+     ggAc Atc  + A+ +
+                CM020894.1 21868612 A------------------------ATCAACTCCCACATAAAG-----GGGGACcatgaGGACTATCAACAACAC 21868657
+                                    *........................******************.....*************************** PP
+
+  PIN3_homologs_from_BLAST      216 ggggcaAtggtgtgagtgtc....ttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..ata 284     
+                                    g g c+Atg++gt     +c    ttA+ A  tA +t  t        AcgAcA    ctc + ++ ttg  ++a
+                CM020894.1 21868658 GAGACCATGTCGT-----CCaccaTTACCATTTATCTAAT--------ACGACA----CTCACACCATTGccCCA 21868715
+                                    *************.....77778*****************........******....************9999* PP
+
+  PIN3_homologs_from_BLAST      285 gtcgtc..Atggtcc....ccatttttatgggagtttgattggattttttttttacaatttt...atatatAta. 349     
+                                    ++ gtc  Atggtcc    c a tttt        tt at+  attttttt tt caa+t+    a at+tAt  
+                CM020894.1 21868716 CCTGTCggATGGTCCatccCTAATTTT--------TTAATCTAATTTTTTTATTTCAACTCAtatAAATTTATTg 21868782
+                                    ************998776466677776........889***********99999999888766667777888778 PP
+
+  PIN3_homologs_from_BLAST      350 ....aaAttttatttatttatctactaAttgtttgAa...attA.....ttAAct.atAtgtgaaaaaatcgtga 411     
+                                        aaAtttta+tt ttt   tac+aA +gt+t Aa   +ttA     ttAAc+ a At tg+aaaaat  +ga
+                CM020894.1 21868783 actaAAATTTTAGTTCTTT---TACGAAACGTGTAAAcggGTTAatacgTTAACGaAAATATGCAAAAATAAGGA 21868854
+                                    888899************9...999999**9999999999999988899899***99************999998 PP
+
+  PIN3_homologs_from_BLAST      412 a 412     
+                                    a
+                CM020894.1 21868855 A 21868855
+                                    6 PP
+
+>> CM020894.1  Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   44.6   9.6   7.4e-10       196       351 ..  13096290  13096450 ..  13096270  13096473 ..  28928902    0.77
+
+  Alignment:
+  score: 44.6 bits
+  PIN3_homologs_from_BLAST      196 ggAtggAccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAcAtgg 268     
+                                    ggAtggAccAtccgacAtgt ggg caAtg t  g g+ tc tAttA a Aa+tggt  t gtggA  gAcAt g
+                CM020894.1 13096290 GGATGGACCATCCGACATGTaGGGTCAATGATACG-GCATCATATTATAGAACTGGTCGTTGTGGAaAGACATAG 13096363
+                                    689****************95667799**988663.666789***************99999999637*****99 PP
+
+  PIN3_homologs_from_BLAST      269 tctcgtgttg.ttgatagtcgtcAtggtccccattttta..tgggagtttgattggatttt...ttttttacaat 337     
+                                     ctcgtgtt  ttgatagt  tc tggtcccca t tta  tgg+agtt+ attgga ttt   tt++tt  +at
+                CM020894.1 13096364 -CTCGTGTTCtTTGATAGTTTTCGTGGTCCCCAATATTAagTGGAAGTTG-ATTGGAGTTTacaTTCATTTACAT 13096436
+                                    .9*****8761567*******************98777533789999999.999998776311122223333333 PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaaa 351     
+                                    tt a  t tAt+a 
+                CM020894.1 13096437 TTGACGTGTATGAT 13096450
+                                    33355555555544 PP
+
+>> CM020894.1  Brassica rapa cultivar Chiifu-401-42 chromosome A7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   28.5  21.0   5.7e-05       173       412 ..  25128092  25127825 ..  25128114  25127824 ..  28928902    0.69
+
+  Alignment:
+  score: 28.5 bits
+  PIN3_homologs_from_BLAST      173 taAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttA 238     
+                                    +aA++++   At+aaa    tggggA+      gAc At   + A+ +g g c+Atg++gt     +c    ttA
+                CM020894.1 25128092 CAACTCC--CATTAAA---ATGGGGACcatgaCGACTATTAACGACACGAGACCATGTCGT-----CCaccaTTA 25128028
+                                    4555444..3444444...47*****9999888****************************.....778778888 PP
+
+  PIN3_homologs_from_BLAST      239 ttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc..........cc 299     
+                                    + A  tA a   t        A gAc     ctc + ++ ttg  ++a+  gt   Atggtcc          c 
+                CM020894.1 25128027 CAATTTATA--AT--------AAGACG----CTCACTCCATTGccCCACATGTTggATGGTCCatcccccaaaC- 25127968
+                                    888777644..44........446666....************7777788888788*****9888654322222. PP
+
+  PIN3_homologs_from_BLAST      300 atttttatgggagt.ttgattggattttttttttacaattttatatatAta........................ 349     
+                                     tttttat   agt tt+att     tttt             tat+t t                         
+                CM020894.1 25127967 -TTTTTATTTTAGTtTTAATTTCCACTTTTAA-----------TATTTCTTcaaaatgacaaaacatcataataa 25127905
+                                    .3444433222222022333333333322222...........22222111222222233355555556667767 PP
+
+  PIN3_homologs_from_BLAST      350 ................aaAttttatttatttatctactaAttgtttgAaattAttAAct.atAtgtgaaaaaatc 407     
+                                                     aAttt+att  tttatc+  taA +g++t Aa  t t AAc+ a At tg+aaaa t 
+                CM020894.1 25127904 attttatggactaacaTAATTTAATTCTTTTATCGTGTAAACGGGTAAATATGTCAACGaAAATATGCAAAATTA 25127830
+                                    7777777788888776677888888888999****************997777899***9**********99999 PP
+
+  PIN3_homologs_from_BLAST      408 gtgaa 412     
+                                     +gaa
+                CM020894.1 25127829 AGGAA 25127825
+                                    88876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       1099  (705659220 residues searched)
+Residues passing SSV filter:       419343547  (0.594); expected (0.02)
+Residues passing bias filter:      250321898  (0.355); expected (0.02)
+Residues passing Vit filter:        59515458  (0.0843); expected (0.003)
+Residues passing Fwd filter:        14791044  (0.021); expected (3e-05)
+Total number of hits:                      5  (2.33e-06)
+# CPU time: 1542.92u 2.45s 00:25:45.37 Elapsed: 00:13:18.05
+# Mc/sec: 365.18
+//
+[ok]

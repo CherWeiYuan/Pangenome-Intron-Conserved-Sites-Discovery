@@ -1,0 +1,304 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      PIN3_intron_homologs.hmm
+# target sequence database:        GCA_001682895.1_black_mustard_Cultivar_inbred_line_YZ12151.fasta
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PIN3_homologs_from_BLAST  [M=413]
+Scores for complete hits:
+    E-value  score  bias  Sequence          start      end  Description
+    ------- ------ -----  --------          -----    -----  -----------
+    3.4e-86  296.3  50.7  CM004497.1     15680821 15680429 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+    3.1e-79  273.4  44.6  CM004497.1     25679974 25679477 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+    2.4e-38  138.6  18.6  LFLV01001204.1   626397   626658 Brassica nigra cultivar inbred line YZ12151 scaffold_82.1,
+    1.8e-31  116.0  20.9  LFLV01001204.1   627297   627476 Brassica nigra cultivar inbred line YZ12151 scaffold_82.1,
+    1.2e-23   90.2  49.2  CM004497.1     25679478 25679917 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+    2.9e-10   46.1  17.2  CM004497.1     26736782 26736522 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+    1.4e-07   37.3   3.6  CM004497.1     34241369 34241199 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+      2e-05   30.2  20.8  CM004497.1     15680505 15680654 Brassica nigra cultivar inbred line YZ12151 chromosome B7,
+     0.0077   21.6   9.5  LFLV01001204.1   627398   627301 Brassica nigra cultivar inbred line YZ12151 scaffold_82.1,
+
+
+Annotation for each hit  (and alignments):
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  296.3  50.7   3.4e-86         1       413 []  15680821  15680429 ..  15680821  15680429 ..  41685129    0.97
+
+  Alignment:
+  score: 296.3 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaattccttaatttt 75      
+                                    cttc+tact tgttttattccttta a               aA ctatttaaa+g+ t aaattccttaatttt
+                CM004497.1 15680821 CTTCCTACTATGTTTTATTCCTTTAAA---------------AAACTATTTAAATGATTGAAATTCCTTAATTTT 15680762
+                                    799*****************9987655...............468****************************** PP
+
+  PIN3_homologs_from_BLAST       76 gcatattttcgttgacatAttaAcccgtttacAtgatAaaagaAttaAattatgttagttaAtaAAAtttA.tat 149     
+                                    gcat   tt+gttgacatAtt A  cgtttacA+gat aaagaAttaAattatgttagt++AtaAAA ttA tat
+                CM004497.1 15680761 GCAT---TTTGTTGACATATTTATACGTTTACACGATTAAAGAATTAAATTATGTTAGTCCATAAAAATTAtTAT 15680690
+                                    ***8...568*************************************************************9*** PP
+
+  PIN3_homologs_from_BLAST      150 gatgttttgtcat.ttg...............tggaaattaAaattcagAtaaaaaaatt..ggggAtggAccAt 206     
+                                    gatgttttgtcat ttg               tggaaa+taAaat+ a At aaaa+ tt  ggggAtggAccAt
+                CM004497.1 15680689 GATGTTTTGTCATtTTGaagaaatattagaagTGGAAACTAAAATC-AAATTAAAAGGTTtaGGGGATGGACCAT 15680616
+                                    *************9999*************************9987.999999999955559************* PP
+
+  PIN3_homologs_from_BLAST      207 ccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg 281     
+                                    ccgacAtgtggggcaAtgg gtgag+gtcttAttAgatAaat  taatggtggAcgAcAtggtctcgtgt+gtt 
+                CM004497.1 15680615 CCGACATGTGGGGCAATGGAGTGAGCGTCTTATTAGATAAATTATAATGGTGGACGACATGGTCTCGTGTCGTTA 15680541
+                                    *************************************************************************** PP
+
+  PIN3_homologs_from_BLAST      282 atagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAtttt 356     
+                                    atagtcgtcAtggtccccatttttatgggagtt+ attggattt               ata+a+At a Att +
+                CM004497.1 15680540 ATAGTCGTCATGGTCCCCATTTTTATGGGAGTTG-ATTGGATTT---------------ATAGAGAT-ATATTAA 15680483
+                                    *********************************9.*********...............99999999.99***** PP
+
+  PIN3_homologs_from_BLAST      357 atttatttatctactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413     
+                                    atttatttatc+actaAtt  ttgAaattA tAA t+tAtgtgaaaaaa cgtgaag
+                CM004497.1 15680482 ATTTATTTATCGACTAATT--TTGAAATTA-TAATTGTATGTGAAAAAAACGTGAAG 15680429
+                                    *******************..*********.99********************9985 PP
+
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  273.4  44.6   3.1e-79         1       413 []  25679974  25679477 ..  25679974  25679477 ..  41685129    0.84
+
+  Alignment:
+  score: 273.4 bits
+  PIN3_homologs_from_BLAST        1 cttcgtactctgttttattcctttataaagtttttagtttcaaAgctatttaaaaggattaaa.........ttc 66      
+                                    cttc+tactctgttttattccttt taa               Agctatttaaaa g ttaaa         ttc
+                CM004497.1 25679974 CTTCATACTCTGTTTTATTCCTTTTTAA---------------AGCTATTTAAAAAGTTTAAAccagattaaTTC 25679915
+                                    789*****************99876665...............578888888888888888777777777778** PP
+
+  PIN3_homologs_from_BLAST       67 cttaattttgcatattttcgttgacatAttaAcccgtt.......................tacAtgatAaaaga 118     
+                                    cttaattttgcatattttcgtt acatAttaAcccgtt                       tacA+gatAaaa a
+                CM004497.1 25679914 CTTAATTTTGCATATTTTCGTTAACATATTAACCCGTTtacacgattttttcactcccgttTACACGATAAAATA 25679840
+                                    ********************************9987761111111111111111111111145667889****** PP
+
+  PIN3_homologs_from_BLAST      119 AttaAattatgttagttaAta.....AAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAtaaaa 188     
+                                    A+taAatt t +tagt++Ata     AAAtttA atga             gtggaaat aAaa t agAt aaa
+                CM004497.1 25679839 ACTAAATTTT-GTAGTCCATAtccctAAATTTAAATGA-------------GTGGAAATAAAAAATGAGATTAAA 25679779
+                                    *****99986.67******855555599****988888.............9*********************** PP
+
+  PIN3_homologs_from_BLAST      189 aaatt.ggggAtggAccAtccgacAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcg 262     
+                                    aaatt ggggAtggAccAtccgacA+gtggggcaAtggtgtgagtgtc tAttAgatAaat gtaatggtggAcg
+                CM004497.1 25679778 AAATTtGGGGATGGACCATCCGACAGGTGGGGCAATGGTGTGAGTGTCGTATTAGATAAATCGTAATGGTGGACG 25679704
+                                    *97777********************************************************************* PP
+
+  PIN3_homologs_from_BLAST      263 AcAtggtctcgtgttgttgatagtcgtcAtggtccccatttttatgggagtttgattggattttttttttacaat 337     
+                                    AcAtggtctcgtgttgttgatagtc  cAtggtccccattt tatgggagtt+ attggatttt+tt        
+                CM004497.1 25679703 ACATGGTCTCGTGTTGTTGATAGTCCCCATGGTCCCCATTTATATGGGAGTTG-ATTGGATTTTCTTA------- 25679637
+                                    ****************************************************9.********977664....... PP
+
+  PIN3_homologs_from_BLAST      338 tttatatatAtaaaAttttatttattt................................................ 364     
+                                        tatatAt a A tttattt tt                                                 
+                CM004497.1 25679636 ----TATATAT-ATAATTTATTTTTTAtttatttattttatatatatataatttattgtaagcaggaaaggatat 25679567
+                                    ....5555555.444444444444333444555566666777777777777777777777777777777777777 PP
+
+  PIN3_homologs_from_BLAST      365 ...........................................atctactaAttgtttgAaattAttAActatAt 396     
+                                                                               atc+act+Att  ttgAaat At+AAct+tAt
+                CM004497.1 25679566 atatttaatttatttatcgactgatttttcttgtgtgaaaattATCGACTGATT--TTGAAATCATAAACTGTAT 25679494
+                                    7777778888888889999********************999999*******99..9****************** PP
+
+  PIN3_homologs_from_BLAST      397 gtgaaaaaatcgtgaag 413     
+                                    gtgaaaaaa cgtgaag
+                CM004497.1 25679493 GTGAAAAAAACGTGAAG 25679477
+                                    **************986 PP
+
+>> LFLV01001204.1  Brassica nigra cultivar inbred line YZ12151 scaffold_82.1, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  138.6  18.6   2.4e-38         1       233 [.    626397    626658 ..    626397    626678 ..    950868    0.90
+
+  Alignment:
+  score: 138.6 bits
+  PIN3_homologs_from_BLAST      1 cttcgtact.ctgttttattcctttataaagtttttagtttcaaA........gctatttaaaaggattaaattcctta 70    
+                                  cttcgtact ctgtttt+ttccttt +aaagt+ t+ag ttca A        gc+a tta  a g+  aaattcctta
+            LFLV01001204.1 626397 CTTCGTACTtCTGTTTTGTTCCTTTTGAAAGTCATCAGATTCACAccatacgtGCCACTTAGTACGGA-AAATTCCTTA 626474
+                                  689999996377*********************************9999999999***9999887775.5557****** PP
+
+  PIN3_homologs_from_BLAST     71 attttgcatattttcgttgacatAttaAcccgt...ttacAtgatAaaagaAttaAattatgttagttaAta....AAA 142   
+                                  attttgcat ttttcgttgacat ttaA cc t   ttacA+gatAaaa aAtt Aatta gttagt++Ata    AAA
+            LFLV01001204.1 626475 ATTTTGCATGTTTTCGTTGACATTTTAATCCATttaTTACACGATAAAATAATTGAATTA-GTTAGTCCATAaattAAA 626552
+                                  *********************************888899********************9.9******99842222456 PP
+
+  PIN3_homologs_from_BLAST    143 tttAtatgatgttttgtcat.ttg...............tggaaattaAaattcagAtaaaaaaattggggAtggAccA 205   
+                                  tttA atg+tgttt gtcat ttg               tggaaattaAa+tt+a  t aaaaa ttggggAtggAccA
+            LFLV01001204.1 626553 TTTAAATGCTGTTTCGTCATgTTGaagaaatcttaggaaTGGAAATTAAATTTAAATTTAAAAACTTGGGGATGGACCA 626631
+                                  777778999***********9999***************************9966666667777999************ PP
+
+  PIN3_homologs_from_BLAST    206 tccgacAtgtggggcaAtggtgtgagtg 233   
+                                  tccgacA+gtggggc Atg tg ga tg
+            LFLV01001204.1 626632 TCCGACAGGTGGGGC-ATGTTGGGATTG 626658
+                                  **************8.799999887665 PP
+
+>> LFLV01001204.1  Brassica nigra cultivar inbred line YZ12151 scaffold_82.1, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  116.0  20.9   1.8e-31       211       413 .]    627297    627476 ..    627276    627476 ..    950868    0.89
+
+  Alignment:
+  score: 116.0 bits
+  PIN3_homologs_from_BLAST    211 cAtgtggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttgatagtcgt 289   
+                                  c     gggcaAtggtgtga tgtc tAttAgatAaatgg aatggtggAcgAcAtgg ctcgtgttgttgatagtc t
+            LFLV01001204.1 627297 C----AGGGCAATGGTGTGAATGTCGTATTAGATAAATGGAAATGGTGGACGACATGGCCTCGTGTTGTTGATAGTCAT 627371
+                                  3....479*********************************************************************** PP
+
+  PIN3_homologs_from_BLAST    290 cAtggtccccatttttatgggagtttgattggattttttttttacaattttatatatAtaaaAttttatttattt.atc 367   
+                                  cAtgg ccccatttttatggg  tt  attggattttt               ata At a Attt+atttattt at 
+            LFLV01001204.1 627372 CATGG-CCCCATTTTTATGGGTATTA-ATTGGATTTTT---------------ATAGAT-ATATTTAATTTATTTtATT 627432
+                                  ****9.677789999*******9998.*******9933...............344444.5577777777776544777 PP
+
+  PIN3_homologs_from_BLAST    368 tactaAttgtttgAaattAttAActatAtgtgaaaaaatcgtgaag 413   
+                                  +act+Att  ttgAaatt  +AAct+tA gt aaaaaatcgtgaag
+            LFLV01001204.1 627433 GACTGATT--TTGAAATTGAAAACTGTACGTTAAAAAATCGTGAAG 627476
+                                  8******9..*********9**********************9985 PP
+
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   90.2  49.2   1.2e-23         2       412 ..  25679478  25679917 ..  25679473  25679918 ..  41685129    0.71
+
+  Alignment:
+  score: 90.2 bits
+  PIN3_homologs_from_BLAST        2 ttcgtactctgttttattcctttataaagtttttagtttcaaAgctatt.........taaaaggattaaa.... 63      
+                                    ttc +     gtttt ttc   +ata+agttt t+ tttcaaA ++a+t         t          a     
+                CM004497.1 25679478 TTCAC-----GTTTTTTTC--ACATACAGTTTATGATTTCAAAATCAGTcgataatttT---------CACacaa 25679536
+                                    44444.....999999999..99********************7777763332221111.........1112222 PP
+
+  PIN3_homologs_from_BLAST       64 ..................ttccttaattttgcatattttcgttgacatAttaAcccgtttacAtg....atAaaa 116     
+                                                      t   ttaa t t  at  tttc t++  a+A taA    t ta At+    atAaa 
+                CM004497.1 25679537 gaaaaatcagtcgataaaTAAATTAAATATATATCCTTTCCTGCTTACAATAAATTATATATATAtaaaATAAAT 25679611
+                                    2333333443333333332222344446788899999******************99988877765555444433 PP
+
+  PIN3_homologs_from_BLAST      117 g......aAttaAattatgt.tagttaAtaAAAtttAtatgatgttttgtcatttgtggaaattaAaattcagAt 184     
+                                           aA taAattat t ta  taA+aAAAt++A                        at+aA++++ca At
+                CM004497.1 25679612 AaataaaAAATAAATTATATaTATATAAGAAAATCCA------------------------ATCAACTCCCATAT 25679662
+                                    3000000333344444433212334678889999999........................9************* PP
+
+  PIN3_homologs_from_BLAST      185 aaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttAgatAaatgg 250     
+                                    aaa      ggggA+     ggAc Atc  + A+ +g g c+Atg++gt     +c    ttA++A +tA +t  
+                CM004497.1 25679663 AAAT-----GGGGACcatggGGACTATCAACAACACGAGACCATGTCGT-----CCaccaTTACGATTTATCTAA 25679727
+                                    *999.....*****99***9*****************************.....77778**************** PP
+
+  PIN3_homologs_from_BLAST      251 taatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc.....ccatttttatgggagtttg 316     
+                                    t        AcgAcA    ctc + ++ ttg  ++a++ gtc  Atggtcc     c a tttt        tt 
+                CM004497.1 25679728 T--------ACGACA----CTCACACCATTGccCCACCTGTCggATGGTCCatcccCAAATTTT--------TTA 25679782
+                                    *........******....************9999**************987776455555555........889 PP
+
+  PIN3_homologs_from_BLAST      317 attggattttttttttacaatttt........atatatAta......aaAttttatttattt............. 364     
+                                    at+  atttttt ttt+ca t  t        a+++atAt+      aaA ttta+ttattt             
+                CM004497.1 25679783 ATCTCATTTTTTATTTCCACTCATttaaatttAGGGATATGgactacAAAATTTAGTTATTTtatcgtgtaaacg 25679857
+                                    *******99988877666432211222222237777777779999996666666666666666666666666666 PP
+
+  PIN3_homologs_from_BLAST      365 ...........atctactaAttgtttgAaattA.....ttAAct.atAtgtgaaaaaatcgtgaa 412     
+                                               atc+  taA +g++t      A     ttAAc+ a At tg+aaaa t  +gaa
+                CM004497.1 25679858 ggagtgaaaaaATCGTGTAAACGGGTT-----AatatgTTAACGaAAATATGCAAAATTAAGGAA 25679917
+                                    666555555444444444554444444.....355555788999999********9998888875 PP
+
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   46.1  17.2   2.9e-10       195       412 ..  26736782  26736522 ..  26736802  26736521 ..  41685129    0.64
+
+  Alignment:
+  score: 46.1 bits
+  PIN3_homologs_from_BLAST      195 gggAtggAccAtccgacAtgtgggg....caAtggtgtgagtgtcttAttAgatAaatggtaatggtggA.cgAc 264     
+                                    gg AtggAccAtccgacAtgt ggg    c+At     g  + tc tAttA a Aa tggt  t gtggA  gAc
+                CM004497.1 26736782 GGTATGGACCATCCGACATGTAGGGtcaaCCAT---ACG-ACATCATATTATAGAAGTGGTCCTTGTGGAaAGAC 26736712
+                                    7899****************9777632223333...222.13356999*******************99637*** PP
+
+  PIN3_homologs_from_BLAST      265 Atggtctcgtgttg.ttgatagtcgtcAtggtccccattttt..atgggagtttgattggatttt.ttttttaca 335     
+                                    At g ctcgtgtt  ttgatagt gtc tggtcccca t tt   tgg agtt+ attgga ttt + tt +   
+                CM004497.1 26736711 ATAG-CTCGTGTTCtTTGATAGTTGTCGTGGTCCCCAATATTaaGTGGAAGTTG-ATTGGAGTTTaCATTCATTT 26736639
+                                    **99.9*****8761567*******************98777335789999999.88888876631222222222 PP
+
+  PIN3_homologs_from_BLAST      336 attttatatatAta.....aaAttttatttattt.....................atctactaAttgtttgAaat 384     
+                                    a++tt  a+ tAt+     a Attttatt   tt                     at +a+t Att ttt     
+                CM004497.1 26736638 ACATTTGACGTATGctatcATATTTTATTGGATTtagattacacttacatgatgtATGGAATCATTTTTT----- 26736569
+                                    3333333444444433333444444444432222445545454444444444444333333333332211..... PP
+
+  PIN3_homologs_from_BLAST      385 tA....................ttAActatAtgtgaaaaaatcgtgaa 412     
+                                     A                    ttAA t++ tgtgaaaaaat  tgaa
+                CM004497.1 26736568 -AttaatttgagtggaaactaaTTAATTGATTGTGAAAAAATGATGAA 26736522
+                                    .12223333334443333333588888999999999999998888776 PP
+
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   37.3   3.6   1.4e-07       203       324 ..  34241369  34241199 ..  34241389  34241177 ..  41685129    0.71
+
+  Alignment:
+  score: 37.3 bits
+  PIN3_homologs_from_BLAST      203 ccAtccgacAtgt.ggggcaAtggtgtgagtgtcttAttAgatAaatggtaatggtg.gAcgAcAtggtctcgtg 275     
+                                    ccAtccgacA+gt ggg caA g +g ga +gtc tA+tA atAa t+gt  t gtg  A gAcAt g ctcgtg
+                CM004497.1 34241369 CCATCCGACACGTaGGGTCAACGACGAGA-CGTCGTACTACATAAGTAGTCGTTGTGtTAGGACATAG-CTCGTG 34241297
+                                    79**********9567779******9976.89****************99777777643889****99.9***** PP
+
+  PIN3_homologs_from_BLAST      276 ttgttgatagtcgtcAtggtccccattttt............................................. 305     
+                                    tt ttgat gt gtc tggtcccca t  t                                             
+                CM004497.1 34241296 TTATTGATTGTTGTCGTGGTCCCCAATCCTaactggagtttacatgaccttcacatttacgtgtaggctatcatc 34241222
+                                    ************************999877554444444444444444444444444444444444444444444 PP
+
+  PIN3_homologs_from_BLAST      306 ....atgggagtttgattggatt 324     
+                                        at gga tt gattg att
+                CM004497.1 34241221 atttATTGGATTTAGATTGCATT 34241199
+                                    44444444444444444444444 PP
+
+>> CM004497.1  Brassica nigra cultivar inbred line YZ12151 chromosome B7, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   30.2  20.8     2e-05       171       331 ..  15680505  15680654 ..  15680479  15680759 ..  41685129    0.68
+
+  Alignment:
+  score: 30.2 bits
+  PIN3_homologs_from_BLAST      171 attaAaattcagAtaaaaaaattggggAt.....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....t 236     
+                                    at+aA++++ca A aaa      ggggA+      gAc At   + A+ +g g c+Atg++gt     +c    t
+                CM004497.1 15680505 ATCAACTCCCATAAAAAT-----GGGGACcatgaCGACTATTAACGACACGAGACCATGTCGT-----CCaccaT 15680569
+                                    677888888777776666.....*****9999888****************************.....77888** PP
+
+  PIN3_homologs_from_BLAST      237 tAttAgatAaatggtaatggtggAcgAcAtggtctcgtgttgttg..atagtcgtc..Atggtcc.......... 297     
+                                    tAt A  tA +t  taa        gAc     ctc + ++ ttg  ++a+  gtc  Atggtcc          
+                CM004497.1 15680570 TATAATTTATCTAATAA--------GACG----CTCACTCCATTGccCCACATGTCggATGGTCCatcccctaaa 15680632
+                                    ***************55........6666....************98899999**********998864333322 PP
+
+  PIN3_homologs_from_BLAST      298 ccatttttatgggagtttgattggattttttttt 331     
+                                    cc  ttt          t+att gatttt +ttt
+                CM004497.1 15680633 CC--TTT----------TAATTTGATTTTAGTTT 15680654
+                                    22..223..........33444444433222222 PP
+
+>> LFLV01001204.1  Brassica nigra cultivar inbred line YZ12151 scaffold_82.1, whole genome shotgun sequence
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   21.6   9.5    0.0077       171       282 ..    627398    627301 ..    627425    627280 ..    950868    0.83
+
+  Alignment:
+  score: 21.6 bits
+  PIN3_homologs_from_BLAST    171 attaAaattcagAtaaaaaaattggggAt....ggAccAtccgacAtgtggggcaAtggtgtgagtgtc....ttAttA 241   
+                                  attaA a++ca A aaa      gggg +     gAc+Atc  + A+ +g ggc+Atg++gt     +c    tt + A
+            LFLV01001204.1 627398 ATTAATACCCATAAAAAT-----GGGGCCatgaTGACTATCAACAACACGAGGCCATGTCGT-----CCaccaTTTCCA 627330
+                                  667777777666666655.....88886666778****************************.....7788899999** PP
+
+  PIN3_homologs_from_BLAST    242 gatAaatggtaatggtggAcgAcAtggtctcgtgttgttga 282   
+                                  ++tA++t  t        AcgAcA     tc + ++ ttg+
+            LFLV01001204.1 627329 TTTATCTAAT--------ACGACA----TTCACACCATTGC 627301
+                                  **********........******....7999999999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (413 nodes)
+Target sequences:                       2545  (804289646 residues searched)
+Residues passing SSV filter:       447884495  (0.557); expected (0.02)
+Residues passing bias filter:      250411060  (0.311); expected (0.02)
+Residues passing Vit filter:        46533096  (0.0579); expected (0.003)
+Residues passing Fwd filter:         7540170  (0.00937); expected (3e-05)
+Total number of hits:                      9  (3.05e-06)
+# CPU time: 886.35u 2.78s 00:14:49.13 Elapsed: 00:07:21.79
+# Mc/sec: 751.86
+//
+[ok]
